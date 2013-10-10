@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% set index=True %}
+{% block content %}
+<div class="row">
+<div class="column column-full">
+    <div id="presentation">
+        <h1>Advanced Computing and e-Science</h1>
+        <p>
+        Welcome to the Advanced Computing and e-Science group web portal within the
+        <a href="http://ifca.es/" title="IFCA">IFCA</a>. We are part
+        of a joint research center between the <a href="http://csic.es" title="CSIC">Spanish National Research Concil</a>
+        and the <a href="http://unican.es" title="Universidad de Cantabria">University of Cantabria</a>, offering 
+        “enhanced” Science (or e-Science) to the researchers, where they can interact through the network, sharing computing
+        resources to support their larger needs for simulation, data storage and transfer, analysis, and collaborative work.
+        </p>
+
+        <h2>About us</h2>
+        <p>Our research efforts are focused on:</p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="icon-li icon-lightbulb"></i>
+                Cloud Computing.
+            </li>
+            <li class="list-group-item"><i class="icon-li icon-lightbulb"></i>
+                Grid Computing.
+            </li>
+            <li class="list-group-item"><i class="icon-li icon-lightbulb"></i>
+                High Performance Computing.
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+<div class="row">
+
+<div class="column">
+    {% if articles %}
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><h4><i class="icon-rss icon-large"></i>Recent Posts</h4></li>
+
+           {% for article in (articles_page.object_list if articles_page else articles) %}
+            <li class="list-group-item">
+                <i class="icon-li icon-chevron-right"></i>
+                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+            </li>
+            {% endfor %}
+       </ul>
+    {% endif %}
+</div>
+
+<div class="column">
+    {% include 'includes/github.html' %}
+</div>
+
+<div class="column">
+    {% include 'includes/twitter.html' %}
+</div>
+</div>
+{% endblock content %}

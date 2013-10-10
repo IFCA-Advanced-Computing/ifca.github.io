@@ -1,0 +1,31 @@
+<footer class="post-info">
+
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item nospace">
+    {% if article.author %}
+    <span class="label label-default">By</span>
+    <a href="{{ SITEURL }}/{{ article.author.url }}"><i class="icon-user"></i>{{ article.author }}</a>
+    {% endif %}
+        </li>
+
+        <li class="list-group-item nospace">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="icon-calendar"></i>{{ article.locale_date }}
+    </span>
+        </li>
+
+        <li class="list-group-item nospace">
+    <span class="label label-default">Category</span>
+    <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+        </li>
+
+    {% if PDF_PROCESSOR %}
+        <span class="label label-default">
+            <a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">PDF</a>
+        </span>
+    {% endif %}
+
+    {% include 'includes/taglist.html' %}
+    </ul>
+</footer><!-- /.post-info -->
