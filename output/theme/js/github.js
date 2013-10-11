@@ -21,7 +21,7 @@ var github = (function(){
           if (!data || !data.data) { return; }
           for (var i = 0; i < data.data.length; i++) {
             if (options.skip_forks && data.data[i].fork) { continue; }
-            if (data.data[i].name == "ifca.github.com") { continue; }
+            if (data.data[i].name == "ifca.github.io") { continue; }
             repos.push(data.data[i]);
           }
           repos.sort(function(a, b) {
