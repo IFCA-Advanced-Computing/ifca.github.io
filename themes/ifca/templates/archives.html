@@ -18,7 +18,7 @@
 <div class="col-lg-9">
     <h1>Blog articles{% if category %}: "{{ category }}"{% endif %}</h1>
     {% if category %} 
-    <a href="{{ SITEURL}}/{{ CATEGORY_FEED_ATOM  }}"><i class="icon-rss icon-small"></i>"{{ category }}" feed </a>
+    <a href="{{ SITEURL}}/{{ CATEGORY_FEED_ATOM|format(category.slug)  }}"><i class="icon-rss icon-small"></i>"{{ category }}" feed </a>
     {% endif %}
     {% if articles %}
         {% for article in (articles_page.object_list if articles_page else articles) %}
