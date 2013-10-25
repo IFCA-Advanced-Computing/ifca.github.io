@@ -43,7 +43,8 @@
            {% for article in (articles_page.object_list if articles_page else articles) %}
             <li class="list-group-item">
                 <i class="icon-li icon-chevron-right"></i>
-                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a><br />
+                <p><small>{{ article.summary }}</small></p>
             </li>
             {% endfor %}
        </ul>

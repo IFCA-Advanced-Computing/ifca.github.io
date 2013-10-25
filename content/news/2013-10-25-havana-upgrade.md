@@ -2,8 +2,9 @@ Title: OpenStack Havana upgrade
 Data: 2013-10-25 09:24
 Category: news
 Tags: cloud, upgrade, infrastructure, OpenStack
+Summary: Upgrade of the cloud infrastructure to the latest release.
 
-On October the 29th (next Tuesday) we will upgrade our [OpenStack](http://cloud.ifca.es)
+On October the 29th (next Tuesday) we will upgrade our [OpenStack](http://portal.cloud.ifca.es)
 cloud infrastrucutre from Grizzly to the latest [Havana](http://www.openstack.org/software/havana/)
 release.
 
