@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>grid.ifca.es</title><link href="http://grid.ifca.es/" rel="alternate"></link><link href="http://grid.ifca.es/feeds/news.atom.xml" rel="self"></link><id>http://grid.ifca.es/</id><updated>2013-10-25T00:00:00+02:00</updated><entry><title>OpenStack Havana upgrade</title><link href="http://grid.ifca.es/openstack-havana-upgrade.html" rel="alternate"></link><updated>2013-10-25T00:00:00+02:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2013-10-25:openstack-havana-upgrade.html</id><summary type="html">&lt;p&gt;On October the 29th (next Tuesday) we will upgrade our &lt;a href="http://portal.cloud.ifca.es"&gt;OpenStack&lt;/a&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>grid.ifca.es</title><link href="http://grid.ifca.es/" rel="alternate"></link><link href="http://grid.ifca.es/feeds/news.atom.xml" rel="self"></link><id>http://grid.ifca.es/</id><updated>2013-10-28T00:00:00+01:00</updated><entry><title>SL6 User Interfaces at your disposal</title><link href="http://grid.ifca.es/sl6-user-interfaces-at-your-disposal.html" rel="alternate"></link><updated>2013-10-28T00:00:00+01:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2013-10-28:sl6-user-interfaces-at-your-disposal.html</id><summary type="html">&lt;p&gt;All the users with access to IFCA cluster can now make use of Scientific Linux 6-based
+user interfaces. To access them just connect via SSH protocol to &lt;code&gt;griduisl6.ifca.es&lt;/code&gt; 
+and you will be redirected to any of the available servers.&lt;/p&gt;
+&lt;p&gt;The most noticeable fact in the new SL6 pool is that they are running over the OpenStack
+cloud infrastructure hosted at IFCA. As a result &lt;code&gt;griduiXX&lt;/code&gt; hostnames will no longer appear, 
+instead &lt;code&gt;cloudprv&lt;/code&gt; identifiers will be used from now on. The performance will not be neither
+hit nor enhanced, since the already existing ones (SL5) are also virtualized.&lt;/p&gt;
+&lt;p&gt;Our intention is to progresivelly move to a fully SL6-based UI stack, so we encourage users
+to try them and report any incidence that can occur. The deadline to drop the old SL5 servers
+is by the end of the year 2013, however this date can be postponed if needed. We will send 
+a reminder when this deadline approaches.&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;</summary><category term="grid"></category><category term="user interface"></category><category term="Scientific Linux 6"></category><category term="infrastructure"></category><category term="cloud"></category></entry><entry><title>OpenStack Havana upgrade</title><link href="http://grid.ifca.es/openstack-havana-upgrade.html" rel="alternate"></link><updated>2013-10-25T00:00:00+02:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2013-10-25:openstack-havana-upgrade.html</id><summary type="html">&lt;p&gt;On October the 29th (next Tuesday) we will upgrade our &lt;a href="http://portal.cloud.ifca.es"&gt;OpenStack&lt;/a&gt;
 cloud infrastrucutre from Grizzly to the latest &lt;a href="http://www.openstack.org/software/havana/"&gt;Havana&lt;/a&gt;
 release.&lt;/p&gt;
 &lt;p&gt;Some of the Grid service and worker nodes are executed on top of this infrastructure, therefore

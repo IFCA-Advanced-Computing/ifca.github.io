@@ -3,7 +3,7 @@
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-    <title>grid.ifca.es</title>
+    <title>SL6 User Interfaces at your disposal</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -11,11 +11,11 @@
 
     <!-- Open Graph tags -->
                 
-                                <meta property="og:type" content="website"/>
-            <meta property="og:title" content="grid.ifca.es"/>
-            <meta property="og:url" content="."/>
-            <meta property="og:description" content="grid.ifca.es"/>
-                    
+                                <meta property="og:type" content="article"/>
+            <meta property="og:title" content="SL6 User Interfaces at your disposal"/>
+            <meta property="og:url" content="./sl6-user-interfaces-at-your-disposal.html"/>
+            <meta property="og:description" content="Scientific Linux 6-based user interfaces (UIs) available at IFCA Cluster."/>
+        
         <!-- Bootstrap -->
             <link rel="stylesheet" href="./theme/css/bootstrap.min.css" type="text/css"/>
         <link href="./theme/css/font-awesome.min.css" rel="stylesheet">
@@ -56,30 +56,75 @@
 <div class="container">
     <div class="row">
             <div class="col-lg-9">
-    <h1>Blog articles</h1>
-                            <article>
-                <h2><a href="./sl6-user-interfaces-at-your-disposal.html">SL6 User Interfaces at your disposal</a></h2>
-                <div class="summary"><p>Scientific Linux 6-based user interfaces (UIs) available at IFCA Cluster.</p>
-                                                            <a class="btn btn-default btn-xs" href="./sl6-user-interfaces-at-your-disposal.html">more ...</a>
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="./sl6-user-interfaces-at-your-disposal.html"
+                       rel="bookmark"
+                       title="Permalink to SL6 User Interfaces at your disposal">
+                        SL6 User Interfaces at your disposal
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <p>All the users with access to IFCA cluster can now make use of Scientific Linux 6-based
+user interfaces. To access them just connect via SSH protocol to <code>griduisl6.ifca.es</code> 
+and you will be redirected to any of the available servers.</p>
+<p>The most noticeable fact in the new SL6 pool is that they are running over the OpenStack
+cloud infrastructure hosted at IFCA. As a result <code>griduiXX</code> hostnames will no longer appear, 
+instead <code>cloudprv</code> identifiers will be used from now on. The performance will not be neither
+hit nor enhanced, since the already existing ones (SL5) are also virtualized.</p>
+<p>Our intention is to progresivelly move to a fully SL6-based UI stack, so we encourage users
+to try them and report any incidence that can occur. The deadline to drop the old SL5 servers
+is by the end of the year 2013, however this date can be postponed if needed. We will send 
+a reminder when this deadline approaches.</p>
+<p>Enjoy!</p>
+                <hr>
+                <div class="panel">
+                    <div class="panel-body">
+                        <footer class="post-info">
+
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item nospace">
+        <span class="label label-default">By</span>
+    <a href="./author/ifca.html"><i class="icon-user"></i>IFCA</a>
+            </li>
+
+        <li class="list-group-item nospace">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="icon-calendar"></i>Mon 28 October 2013
+    </span>
+        </li>
+
+        <li class="list-group-item nospace">
+    <span class="label label-default">Category</span>
+    <a href="./category/news.html">news</a>
+        </li>
+
+    
+    <li class="list-group-item nospace">
+<span class="label label-default">Tags</span>
+	<a href="./tag/grid.html">grid</a>
+            /
+    	<a href="./tag/user-interface.html">user interface</a>
+            /
+    	<a href="./tag/scientific-linux-6.html">Scientific Linux 6</a>
+            /
+    	<a href="./tag/infrastructure.html">infrastructure</a>
+            /
+    	<a href="./tag/cloud.html">cloud</a>
+    </li>
+    </ul>
+</footer><!-- /.post-info -->                    </div>
                 </div>
-            </article>
-            <hr/>
-                    <article>
-                <h2><a href="./openstack-havana-upgrade.html">OpenStack Havana upgrade</a></h2>
-                <div class="summary"><p>Upgrade of the cloud infrastructure to the latest release.</p>
-                                                            <a class="btn btn-default btn-xs" href="./openstack-havana-upgrade.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-                    <article>
-                <h2><a href="./hello-world.html">Hello world</a></h2>
-                <div class="summary"><p>This is our very first post, stay tuned.</p>
-                                                            <a class="btn btn-default btn-xs" href="./hello-world.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            
-    </div>
+            </div>
+            <!-- /.entry-content -->
+            <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="IFCACluster">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+                    </article>
+    </section>
+</div>
 <div class="col-lg-3 well well-sm" id="sidebar">
     <aside>
     <section>
@@ -129,6 +174,7 @@
                     </a>
                 </li>
             </aside></div>
+
     </div>
     <div class="row">
         <hr>
