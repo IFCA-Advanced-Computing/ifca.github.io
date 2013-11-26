@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>grid.ifca.es</title><link href="http://grid.ifca.es/" rel="alternate"></link><link href="http://grid.ifca.es/feeds/all.atom.xml" rel="self"></link><id>http://grid.ifca.es/</id><updated>2013-10-28T00:00:00+01:00</updated><entry><title>SL6 User Interfaces at your disposal</title><link href="http://grid.ifca.es/sl6-user-interfaces-at-your-disposal.html" rel="alternate"></link><updated>2013-10-28T00:00:00+01:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2013-10-28:sl6-user-interfaces-at-your-disposal.html</id><summary type="html">&lt;p&gt;All the users with access to IFCA cluster can now make use of Scientific Linux 6-based
+<feed xmlns="http://www.w3.org/2005/Atom"><title>grid.ifca.es</title><link href="http://grid.ifca.es/" rel="alternate"></link><link href="http://grid.ifca.es/feeds/all.atom.xml" rel="self"></link><id>http://grid.ifca.es/</id><updated>2013-11-25T00:00:00+01:00</updated><entry><title>SL5 User Interfaces deprecation plan</title><link href="http://grid.ifca.es/sl5-user-interfaces-deprecation-plan.html" rel="alternate"></link><updated>2013-11-25T00:00:00+01:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2013-11-25:sl5-user-interfaces-deprecation-plan.html</id><summary type="html">&lt;p&gt;The Scientific Linux 5 user interfaces have become obsolete and will be
+deprecated soon, according to the following deprecation plan:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;December 03th 2013: gridui.ifca.es will stop pointing to the Scientific
+   Linux 5 machines, and will redirect users to the Scientific Linux 6
+   machines.&lt;/li&gt;
+&lt;li&gt;December 10th 2013: griduisl5.ifca.es will become unavailable, therefore
+   there will be no access to the Scientific Linux 5 machines anymore. Please,
+   update your working environment before that date.&lt;/li&gt;
+&lt;li&gt;January 2014: Deletion and removal of machines.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;As you can see we have established a retention policy of the deprecated
+machines from December 10th 2013 to January 2014. This is to ensure a working
+environment just in case it is impossible to migrate any software environment
+before December 10th (limited access will be granted to those users that might
+need access to them). However, we encourage users, groups and software
+administrators to move and adapt their environments to Scientific Linux 6 as
+soon as possible if it is not done yet.&lt;/p&gt;
+&lt;p&gt;If there is any user, group or software administrator that cannot reach the
+described deadline, please open a ticket on &lt;a href="mailto:grid.support@ifca.unican.es"&gt;our support helpdesk (
+grid.support@ifca.unican.es)&lt;/a&gt; as soon as
+possible, explaining your situation.&lt;/p&gt;</summary><category term="grid"></category><category term="user interface"></category><category term="Scientific Linux 5"></category></entry><entry><title>SL6 User Interfaces at your disposal</title><link href="http://grid.ifca.es/sl6-user-interfaces-at-your-disposal.html" rel="alternate"></link><updated>2013-10-28T00:00:00+01:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2013-10-28:sl6-user-interfaces-at-your-disposal.html</id><summary type="html">&lt;p&gt;All the users with access to IFCA cluster can now make use of Scientific Linux 6-based
 user interfaces. To access them just connect via SSH protocol to &lt;code&gt;griduisl6.ifca.es&lt;/code&gt; 
 and you will be redirected to any of the available servers.&lt;/p&gt;
 &lt;p&gt;The most noticeable fact in the new SL6 pool is that they are running over the OpenStack
@@ -15,4 +36,4 @@ cloud infrastrucutre from Grizzly to the latest &lt;a href="http://www.openstack
 release.&lt;/p&gt;
 &lt;p&gt;Some of the Grid service and worker nodes are executed on top of this infrastructure, therefore
 some glitches in their availability are expected during the morning.&lt;/p&gt;
-&lt;p&gt;You can check the &lt;a href="https://goc.egi.eu/portal/index.php?Page_Type=Downtime&amp;amp;id=12066"&gt;downtime on the GOCDB&lt;/a&gt;.&lt;/p&gt;</summary><category term="cloud"></category><category term="upgrade"></category><category term="infrastructure"></category><category term="OpenStack"></category></entry><entry><title>Hello world</title><link href="http://grid.ifca.es/hello-world.html" rel="alternate"></link><updated>2013-10-10T12:26:00+02:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2013-10-10:hello-world.html</id><summary type="html">&lt;p&gt;This is our very first post, stay tuned.&lt;/p&gt;</summary></entry></feed>
+&lt;p&gt;You can check the &lt;a href="https://goc.egi.eu/portal/index.php?Page_Type=Downtime&amp;amp;id=12066"&gt;downtime on the GOCDB&lt;/a&gt;.&lt;/p&gt;</summary><category term="cloud"></category><category term="upgrade"></category><category term="infrastructure"></category><category term="OpenStack"></category></entry></feed>
