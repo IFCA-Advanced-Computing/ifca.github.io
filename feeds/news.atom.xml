@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>grid.ifca.es</title><link href="http://grid.ifca.es/" rel="alternate"></link><link href="http://grid.ifca.es/feeds/news.atom.xml" rel="self"></link><id>http://grid.ifca.es/</id><updated>2014-03-28T00:00:00+01:00</updated><entry><title>SL5 User Interfaces deprecation plan (2)</title><link href="http://grid.ifca.es/sl5-user-interfaces-deprecation-plan-2.html" rel="alternate"></link><updated>2014-03-28T00:00:00+01:00</updated><author><name>aloga</name></author><id>tag:grid.ifca.es,2014-03-28:sl5-user-interfaces-deprecation-plan-2.html</id><summary type="html">&lt;p&gt;After the postponed
+&lt;a href="http://grid.ifca.es/sl5-user-interfaces-deprecation-plan.html"&gt;SLC5 deprecation plan&lt;/a&gt;
+we have restablish the procedure to deprecate the Scientific Linux 5 user interfaces.
+The operating system on these machines has become obsolete and are going to be removed
+according to the following deprecation plan.&lt;/p&gt;
+&lt;h2&gt;Deprecation plan&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;April 31th 2014: &lt;code&gt;gridui.ifca.es&lt;/code&gt; will stop pointing to the Scientific
+   Linux 5 machines, and will redirect users to the Scientific Linux 6
+   machines.&lt;/li&gt;
+&lt;li&gt;April 14th 2014: &lt;code&gt;griduisl5.ifca.es&lt;/code&gt; will become unavailable, therefore
+   there will be no access to the Scientific Linux 5 machines anymore. Please,
+   update your working environment before that date.&lt;/li&gt;
+&lt;li&gt;April 30th 2014: Deletion and removal of machines.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;SSH warnings about host identification changed&lt;/h2&gt;
+&lt;p&gt;Please take into account that on April 31th the fingerprint of &lt;code&gt;gridui.ifca.es&lt;/code&gt; will
+change. It is possible that you will get messages like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;user@mymachine:~ $&lt;/span&gt; ssh user@gridui.ifca.es
+&lt;span class="go"&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;/span&gt;
+&lt;span class="go"&gt;@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @&lt;/span&gt;
+&lt;span class="go"&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;/span&gt;
+&lt;span class="go"&gt;IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!&lt;/span&gt;
+&lt;span class="go"&gt;Someone could be eavesdropping on you right now (man-in-the-middle attack)!&lt;/span&gt;
+&lt;span class="go"&gt;It is also possible that a host key has just been changed.&lt;/span&gt;
+&lt;span class="go"&gt;The fingerprint for the RSA key sent by the remote host is&lt;/span&gt;
+&lt;span class="go"&gt;29:80:9b:28:e7:8a:00:fe:6c:60:ef:e6:a6:71:33:bd.&lt;/span&gt;
+&lt;span class="go"&gt;Please contact your system administrator.&lt;/span&gt;
+&lt;span class="go"&gt;Add correct host key in /home/user/.ssh/known_hosts to get rid of this message.&lt;/span&gt;
+&lt;span class="go"&gt;Offending RSA key in /home/user/.ssh/known_hosts:58&lt;/span&gt;
+&lt;span class="go"&gt;  remove with: ssh-keygen -f &amp;quot;/home/user/.ssh/known_hosts&amp;quot; -R gridui.ifca.es&lt;/span&gt;
+&lt;span class="go"&gt;RSA host key for gridui has changed and you have requested strict checking.&lt;/span&gt;
+&lt;span class="go"&gt;Host key verification failed.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Check that the new fingerprint is &lt;strong&gt;exactly&lt;/strong&gt; &lt;code&gt;29:80:9b:28:e7:8a:00:fe:6c:60:ef:e6:a6:71:33:bd&lt;/code&gt;. If it is, then
+you can safely remove the offending match with the following command:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;user@mymachine:~ $&lt;/span&gt; ssh-keygen -f &lt;span class="s2"&gt;&amp;quot;/home/user/.ssh/known_hosts&amp;quot;&lt;/span&gt; -R gridui.ifca.es
+&lt;span class="go"&gt;# Host griduisl6 found: line 58 type RSA&lt;/span&gt;
+&lt;span class="go"&gt;/home/user/.ssh/known_hosts updated.&lt;/span&gt;
+&lt;span class="go"&gt;Original contents retained as /home/user/.ssh/known_hosts.old&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Access to legacy SL5 machines&lt;/h2&gt;
+&lt;p&gt;Access to Scientific Linux 5 machines is still provided trough the
+&lt;a href="https://grid.ifca.es/wiki/Cluster/Usage#Access_to_Scientific_Linux_5_machines"&gt;batch system&lt;/a&gt;.
+In order to request a Scientific Linux 5 machine you must specify the complex &lt;code&gt;scientificlinux5&lt;/code&gt; like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;user@cloudprv-10-0:~ $&lt;/span&gt; qsub -l &lt;span class="nv"&gt;scientificlinux5&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;true&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;...&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If you want an interactive session, request one with &lt;code&gt;qlogin&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;user@cloudprv-10-0:~ $&lt;/span&gt; qlogin -l &lt;span class="nv"&gt;scientificlinux5&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;true&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;...&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;span class="go"&gt;JSV &amp;quot;/nfs4/opt/gridengine/util/resources/jsv/jsv-IFCA.tcl&amp;quot; has been started&lt;/span&gt;
+&lt;span class="go"&gt;JSV &amp;quot;/nfs4/opt/gridengine/util/resources/jsv/jsv-IFCA.tcl&amp;quot; has been stopped&lt;/span&gt;
+&lt;span class="go"&gt;Your job 1822278 (&amp;quot;QLOGIN&amp;quot;) has been submitted&lt;/span&gt;
+&lt;span class="go"&gt;waiting for interactive job to be scheduled ...&lt;/span&gt;
+&lt;span class="go"&gt;Your interactive job 1822278 has been successfully scheduled.&lt;/span&gt;
+&lt;span class="go"&gt;Establishing builtin session to host cloudprv-02-9.ifca.es ...&lt;/span&gt;
+&lt;span class="gp"&gt;user@cloudprv-02-9:~$&lt;/span&gt; cat /etc/redhat-release
+&lt;span class="go"&gt;Scientific Linux SL release 5.5 (Boron)&lt;/span&gt;
+&lt;span class="gp"&gt;user@cloudprv-02-9:~$&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Support&lt;/h2&gt;
+&lt;p&gt;If there is any user, group or software administrator that cannot reach the
+described deadline, please open a ticket on &lt;a href="https://support.ifca.es/"&gt;our support helpdesk&lt;/a&gt;
+as soon as possible, explaining your situation.&lt;/p&gt;</summary><category term="grid"></category><category term="user interface"></category><category term="Scientific Linux 5"></category></entry><entry><title>SL5 User Interfaces deprecation plan</title><link href="http://grid.ifca.es/sl5-user-interfaces-deprecation-plan.html" rel="alternate"></link><updated>2013-11-25T00:00:00+01:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2013-11-25:sl5-user-interfaces-deprecation-plan.html</id><summary type="html">&lt;p&gt;The Scientific Linux 5 user interfaces have become obsolete and will be
+deprecated soon, according to the following deprecation plan:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;December 03th 2013: &lt;code&gt;gridui.ifca.es&lt;/code&gt; will stop pointing to the Scientific
+   Linux 5 machines, and will redirect users to the Scientific Linux 6
+   machines.&lt;/li&gt;
+&lt;li&gt;December 10th 2013: &lt;code&gt;griduisl5.ifca.es&lt;/code&gt; will become unavailable, therefore
+   there will be no access to the Scientific Linux 5 machines anymore. Please,
+   update your working environment before that date.&lt;/li&gt;
+&lt;li&gt;January 2014: Deletion and removal of machines.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;As you can see we have established a retention policy of the deprecated
+machines from December 10th 2013 to January 2014. This is to ensure a working
+environment just in case it is impossible to migrate any software environment
+before December 10th (limited access will be granted to those users that might
+need access to them). However, we encourage users, groups and software
+administrators to move and adapt their environments to Scientific Linux 6 as
+soon as possible if it is not done yet.&lt;/p&gt;
+&lt;p&gt;If there is any user, group or software administrator that cannot reach the
+described deadline, please open a ticket on &lt;a href="mailto:grid.support@ifca.unican.es"&gt;our support helpdesk (
+grid.support@ifca.unican.es)&lt;/a&gt; as soon as
+possible, explaining your situation.&lt;/p&gt;</summary><category term="grid"></category><category term="user interface"></category><category term="Scientific Linux 5"></category></entry><entry><title>SL6 User Interfaces at your disposal</title><link href="http://grid.ifca.es/sl6-user-interfaces-at-your-disposal.html" rel="alternate"></link><updated>2013-10-28T00:00:00+01:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2013-10-28:sl6-user-interfaces-at-your-disposal.html</id><summary type="html">&lt;p&gt;All the users with access to IFCA cluster can now make use of Scientific Linux 6-based
+user interfaces. To access them just connect via SSH protocol to &lt;code&gt;griduisl6.ifca.es&lt;/code&gt; 
+and you will be redirected to any of the available servers.&lt;/p&gt;
+&lt;p&gt;The most noticeable fact in the new SL6 pool is that they are running over the OpenStack
+cloud infrastructure hosted at IFCA. As a result &lt;code&gt;griduiXX&lt;/code&gt; hostnames will no longer appear, 
+instead &lt;code&gt;cloudprv&lt;/code&gt; identifiers will be used from now on. The performance will not be neither
+hit nor enhanced, since the already existing ones (SL5) are also virtualized.&lt;/p&gt;
+&lt;p&gt;Our intention is to progresivelly move to a fully SL6-based UI stack, so we encourage users
+to try them and report any incidence that can occur. The deadline to drop the old SL5 servers
+is by the end of the year 2013, however this date can be postponed if needed. We will send 
+a reminder when this deadline approaches.&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;</summary><category term="grid"></category><category term="user interface"></category><category term="Scientific Linux 6"></category><category term="infrastructure"></category><category term="cloud"></category></entry><entry><title>OpenStack Havana upgrade</title><link href="http://grid.ifca.es/openstack-havana-upgrade.html" rel="alternate"></link><updated>2013-10-25T00:00:00+02:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2013-10-25:openstack-havana-upgrade.html</id><summary type="html">&lt;p&gt;On October the 29th (next Tuesday) we will upgrade our &lt;a href="http://portal.cloud.ifca.es"&gt;OpenStack&lt;/a&gt;
+cloud infrastrucutre from Grizzly to the latest &lt;a href="http://www.openstack.org/software/havana/"&gt;Havana&lt;/a&gt;
+release.&lt;/p&gt;
+&lt;p&gt;Some of the Grid service and worker nodes are executed on top of this infrastructure, therefore
+some glitches in their availability are expected during the morning.&lt;/p&gt;
+&lt;p&gt;You can check the &lt;a href="https://goc.egi.eu/portal/index.php?Page_Type=Downtime&amp;amp;id=12066"&gt;downtime on the GOCDB&lt;/a&gt;.&lt;/p&gt;</summary><category term="cloud"></category><category term="upgrade"></category><category term="infrastructure"></category><category term="OpenStack"></category></entry></feed>

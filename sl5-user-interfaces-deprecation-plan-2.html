@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+    <title>SL5 User Interfaces deprecation plan (2)</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph tags -->
+                
+                                <meta property="og:type" content="article"/>
+            <meta property="og:title" content="SL5 User Interfaces deprecation plan (2)"/>
+            <meta property="og:url" content="./sl5-user-interfaces-deprecation-plan-2.html"/>
+            <meta property="og:description" content="NEW Dates for the Scientific Linux 5-based user interfaces (UIs) deprecation plan."/>
+        
+        <!-- Bootstrap -->
+            <link rel="stylesheet" href="./theme/css/bootstrap.min.css" type="text/css"/>
+        <link href="./theme/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./theme/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="./theme/css/pygments.css" rel="stylesheet">
+    <link rel="stylesheet" href="./theme/css/style.css" type="text/css"/>
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+            <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="grid.ifca.es ATOM Feed"/>
+        
+    </head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="." class="navbar-brand">grid.ifca.es</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="/archives.html">Blog</a></li>
+                                    <li><a href="http://grid.ifca.es/wiki">Wiki</a></li>
+                                    <li><a href="http://support.ifca.es/">Get support</a></li>
+                                                                                                </ul>
+                    </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</nav>
+<!-- /.navbar -->
+
+<div class="container">
+    <div class="row">
+            <div class="col-lg-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="./sl5-user-interfaces-deprecation-plan-2.html"
+                       rel="bookmark"
+                       title="Permalink to SL5 User Interfaces deprecation plan (2)">
+                        SL5 User Interfaces deprecation plan (2)
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <p>After the postponed
+<a href="./sl5-user-interfaces-deprecation-plan.html">SLC5 deprecation plan</a>
+we have restablish the procedure to deprecate the Scientific Linux 5 user interfaces.
+The operating system on these machines has become obsolete and are going to be removed
+according to the following deprecation plan.</p>
+<h2>Deprecation plan</h2>
+<ol>
+<li>April 31th 2014: <code>gridui.ifca.es</code> will stop pointing to the Scientific
+   Linux 5 machines, and will redirect users to the Scientific Linux 6
+   machines.</li>
+<li>April 14th 2014: <code>griduisl5.ifca.es</code> will become unavailable, therefore
+   there will be no access to the Scientific Linux 5 machines anymore. Please,
+   update your working environment before that date.</li>
+<li>April 30th 2014: Deletion and removal of machines.</li>
+</ol>
+<h2>SSH warnings about host identification changed</h2>
+<p>Please take into account that on April 31th the fingerprint of <code>gridui.ifca.es</code> will
+change. It is possible that you will get messages like this:</p>
+<div class="highlight"><pre><span class="gp">user@mymachine:~ $</span> ssh user@gridui.ifca.es
+<span class="go">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span>
+<span class="go">@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @</span>
+<span class="go">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span>
+<span class="go">IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!</span>
+<span class="go">Someone could be eavesdropping on you right now (man-in-the-middle attack)!</span>
+<span class="go">It is also possible that a host key has just been changed.</span>
+<span class="go">The fingerprint for the RSA key sent by the remote host is</span>
+<span class="go">29:80:9b:28:e7:8a:00:fe:6c:60:ef:e6:a6:71:33:bd.</span>
+<span class="go">Please contact your system administrator.</span>
+<span class="go">Add correct host key in /home/user/.ssh/known_hosts to get rid of this message.</span>
+<span class="go">Offending RSA key in /home/user/.ssh/known_hosts:58</span>
+<span class="go">  remove with: ssh-keygen -f &quot;/home/user/.ssh/known_hosts&quot; -R gridui.ifca.es</span>
+<span class="go">RSA host key for gridui has changed and you have requested strict checking.</span>
+<span class="go">Host key verification failed.</span>
+</pre></div>
+
+
+<p>Check that the new fingerprint is <strong>exactly</strong> <code>29:80:9b:28:e7:8a:00:fe:6c:60:ef:e6:a6:71:33:bd</code>. If it is, then
+you can safely remove the offending match with the following command:</p>
+<div class="highlight"><pre><span class="gp">user@mymachine:~ $</span> ssh-keygen -f <span class="s2">&quot;/home/user/.ssh/known_hosts&quot;</span> -R gridui.ifca.es
+<span class="go"># Host griduisl6 found: line 58 type RSA</span>
+<span class="go">/home/user/.ssh/known_hosts updated.</span>
+<span class="go">Original contents retained as /home/user/.ssh/known_hosts.old</span>
+</pre></div>
+
+
+<h2>Access to legacy SL5 machines</h2>
+<p>Access to Scientific Linux 5 machines is still provided trough the
+<a href="https://grid.ifca.es/wiki/Cluster/Usage#Access_to_Scientific_Linux_5_machines">batch system</a>.
+In order to request a Scientific Linux 5 machine you must specify the complex <code>scientificlinux5</code> like this:</p>
+<div class="highlight"><pre><span class="gp">user@cloudprv-10-0:~ $</span> qsub -l <span class="nv">scientificlinux5</span><span class="o">=</span><span class="nb">true</span> <span class="o">(</span>...<span class="o">)</span>
+</pre></div>
+
+
+<p>If you want an interactive session, request one with <code>qlogin</code>:</p>
+<div class="highlight"><pre><span class="gp">user@cloudprv-10-0:~ $</span> qlogin -l <span class="nv">scientificlinux5</span><span class="o">=</span><span class="nb">true</span> <span class="o">(</span>...<span class="o">)</span>
+<span class="go">JSV &quot;/nfs4/opt/gridengine/util/resources/jsv/jsv-IFCA.tcl&quot; has been started</span>
+<span class="go">JSV &quot;/nfs4/opt/gridengine/util/resources/jsv/jsv-IFCA.tcl&quot; has been stopped</span>
+<span class="go">Your job 1822278 (&quot;QLOGIN&quot;) has been submitted</span>
+<span class="go">waiting for interactive job to be scheduled ...</span>
+<span class="go">Your interactive job 1822278 has been successfully scheduled.</span>
+<span class="go">Establishing builtin session to host cloudprv-02-9.ifca.es ...</span>
+<span class="gp">user@cloudprv-02-9:~$</span> cat /etc/redhat-release
+<span class="go">Scientific Linux SL release 5.5 (Boron)</span>
+<span class="gp">user@cloudprv-02-9:~$</span>
+</pre></div>
+
+
+<h2>Support</h2>
+<p>If there is any user, group or software administrator that cannot reach the
+described deadline, please open a ticket on <a href="https://support.ifca.es/">our support helpdesk</a>
+as soon as possible, explaining your situation.</p>
+                <hr>
+                <div class="panel">
+                    <div class="panel-body">
+                        <footer class="post-info">
+
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item nospace">
+        <span class="label label-default">By</span>
+    <a href="./author/aloga.html"><i class="icon-user"></i>aloga</a>
+            </li>
+
+        <li class="list-group-item nospace">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="icon-calendar"></i>vie 28 marzo 2014
+    </span>
+        </li>
+
+        <li class="list-group-item nospace">
+    <span class="label label-default">Category</span>
+    <a href="./category/news.html">news</a>
+        </li>
+
+    
+    <li class="list-group-item nospace">
+<span class="label label-default">Tags</span>
+	<a href="./tag/grid.html">grid</a>
+            /
+    	<a href="./tag/user-interface.html">user interface</a>
+            /
+    	<a href="./tag/scientific-linux-5.html">Scientific Linux 5</a>
+    </li>
+    </ul>
+</footer><!-- /.post-info -->                    </div>
+                </div>
+            </div>
+            <!-- /.entry-content -->
+            <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="IFCACluster">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+                    </article>
+    </section>
+</div>
+<div class="col-lg-3 well well-sm" id="sidebar">
+    <aside>
+    <section>
+        <ul class="list-group list-group-flush">
+
+                <li class="list-group-item"><h4><i class="icon-home icon-large"></i>Categories</h4></li>
+                                    <li class="list-group-item">
+                        <a href="./category/news.html">
+                            <i class="icon-folder-open icon-large"></i>news
+                        </a>
+                    </li>
+                
+            <li class="list-group-item"><a href="./tags.html"><h4><i class="icon-tags icon-large"></i>Tags</h4></a></li>
+                            <li class="list-group-item tag-1">
+                    <a href="./tag/user-interface.html">
+                        user interface
+                    </a>
+                </li>
+                            <li class="list-group-item tag-1">
+                    <a href="./tag/grid.html">
+                        grid
+                    </a>
+                </li>
+                            <li class="list-group-item tag-2">
+                    <a href="./tag/infrastructure.html">
+                        infrastructure
+                    </a>
+                </li>
+                            <li class="list-group-item tag-2">
+                    <a href="./tag/cloud.html">
+                        cloud
+                    </a>
+                </li>
+                            <li class="list-group-item tag-2">
+                    <a href="./tag/scientific-linux-5.html">
+                        Scientific Linux 5
+                    </a>
+                </li>
+                            <li class="list-group-item tag-4">
+                    <a href="./tag/scientific-linux-6.html">
+                        Scientific Linux 6
+                    </a>
+                </li>
+                            <li class="list-group-item tag-4">
+                    <a href="./tag/openstack.html">
+                        OpenStack
+                    </a>
+                </li>
+                            <li class="list-group-item tag-4">
+                    <a href="./tag/upgrade.html">
+                        upgrade
+                    </a>
+                </li>
+            </aside></div>
+
+    </div>
+    <div class="row">
+        <hr>
+        <div class="footer">
+
+<div class="nav navbar-nav">
+    <p>Contact: <a href="mailto: grid.admin_AT_ifca.unican.es">grid.admin _AT_ ifca.unican.es</a>
+    </p>
+    <p>Advanced Computing and e-Science Group<br />
+    Instituto de Física de Cantabria<br />
+    Edificio Juan Jordá<br />
+    Avenida de los Castros, s/n<br />
+    E-39005 Santander<br />
+    Cantabria, Spain</p>
+</div>
+
+<div class="nav navbar-nav navbar-right">
+    El Instituto de Física de Cantabria es un Centro Mixto<br />
+    del Consejo Superior de Investigaciones Científicas y de 
+    <br/ >la Universidad de Cantabria.
+</div>
+</div>    </div>
+</div>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="./theme/js/respond.min.js"></script>
+</body>
+</html>
