@@ -7,10 +7,10 @@ Summary: Dates for the Scientific Linux 5-based user interfaces (UIs) deprecatio
 The Scientific Linux 5 user interfaces have become obsolete and will be
 deprecated soon, according to the following deprecation plan:
 
-1. December 03th 2013: gridui.ifca.es will stop pointing to the Scientific
+1. December 03th 2013: `gridui.ifca.es` will stop pointing to the Scientific
    Linux 5 machines, and will redirect users to the Scientific Linux 6
    machines.
-1. December 10th 2013: griduisl5.ifca.es will become unavailable, therefore
+1. December 10th 2013: `griduisl5.ifca.es` will become unavailable, therefore
    there will be no access to the Scientific Linux 5 machines anymore. Please,
    update your working environment before that date.
 1. January 2014: Deletion and removal of machines.
