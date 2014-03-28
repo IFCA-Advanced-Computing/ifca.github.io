@@ -61,6 +61,14 @@ a {
     height: auto;
 }
 
+.entry-content h2 {
+    font-size: 1.5em;
+}
+
+.entry-content h3 {
+    font-size: 1em;
+}
+
 .highlight pre {
     background-color: #202020;
     color: #777;

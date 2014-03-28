@@ -11,6 +11,7 @@ Pelican documentation: http://getpelican.com
      so `content/news/hello-world.md` will make hello-world belong to the news
      category.
 3. Once you're done, create the output: `make publish`
-4. Commit your changes `git commit -a`
-5. Publish to `grid.ifca.es`: `make ssh_upload`
-6. Publish to github: `make github`
+4. Add the output directory `git add output`
+5. Commit your changes `git commit -a`
+6. Publish to `grid.ifca.es`: `make ssh_upload`
+7. Publish to github: `make github`
