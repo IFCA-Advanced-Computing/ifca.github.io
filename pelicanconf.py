@@ -39,6 +39,7 @@ GITHUB_REPO_COUNT = 20
 
 MENUITEMS = (('Home', '/'),
              ('Blog', '/archives.html'),
-             ('Wiki', 'http://grid.ifca.es/wiki'),)
+             ('Wiki', 'http://grid.ifca.es/wiki'),
+             ('Get support', 'http://support.ifca.es/'),)
 
 ADDTHIS_PROFILE="xa-5257ddb854d1e8cd"
