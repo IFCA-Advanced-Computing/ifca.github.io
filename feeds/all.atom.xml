@@ -18,7 +18,7 @@ according to the following deprecation plan.&lt;/p&gt;
 &lt;li&gt;April 30th 2014: Deletion and removal of machines.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2&gt;SSH warnings about host identification changed&lt;/h2&gt;
-&lt;p&gt;Please take into account that on April 31th the fingerprint of &lt;code&gt;gridui.ifca.es&lt;/code&gt; will
+&lt;p&gt;Please take into account that on April 7th the fingerprint of &lt;code&gt;gridui.ifca.es&lt;/code&gt; will
 change. It is possible that you will get messages like this:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;user@mymachine:~ $&lt;/span&gt; ssh user@gridui.ifca.es
 &lt;span class="go"&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;/span&gt;
