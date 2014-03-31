@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>grid.ifca.es</title><link href="http://grid.ifca.es/" rel="alternate"></link><link href="http://grid.ifca.es/feeds/all.atom.xml" rel="self"></link><id>http://grid.ifca.es/</id><updated>2014-03-28T00:00:00+01:00</updated><entry><title>SL5 User Interfaces deprecation plan (2)</title><link href="http://grid.ifca.es/sl5-user-interfaces-deprecation-plan2.html" rel="alternate"></link><updated>2014-03-28T00:00:00+01:00</updated><author><name>aloga</name></author><id>tag:grid.ifca.es,2014-03-28:sl5-user-interfaces-deprecation-plan2.html</id><summary type="html">&lt;p&gt;After the postponed
+<feed xmlns="http://www.w3.org/2005/Atom"><title>grid.ifca.es</title><link href="http://grid.ifca.es/" rel="alternate"></link><link href="http://grid.ifca.es/feeds/all.atom.xml" rel="self"></link><id>http://grid.ifca.es/</id><updated>2014-03-28T00:00:00+01:00</updated><entry><title>POSTPONED: SL5 User Interfaces deprecation plan (2)</title><link href="http://grid.ifca.es/sl5-user-interfaces-deprecation-plan2.html" rel="alternate"></link><updated>2014-03-28T00:00:00+01:00</updated><author><name>aloga</name></author><id>tag:grid.ifca.es,2014-03-28:sl5-user-interfaces-deprecation-plan2.html</id><summary type="html">&lt;p&gt;Due to a mistake with the dates, the deprecation plan has been &lt;strong&gt;POSTPONED&lt;/strong&gt; until April 7th 2014.
+Please check the new plan below.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;After the postponed
 &lt;a href="http://grid.ifca.es/sl5-user-interfaces-deprecation-plan.html"&gt;SLC5 deprecation plan&lt;/a&gt;
 we have restablish the procedure to deprecate the Scientific Linux 5 user interfaces.
 The operating system on these machines has become obsolete and are going to be removed
 according to the following deprecation plan.&lt;/p&gt;
 &lt;h2&gt;Deprecation plan&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;April 31th 2014: &lt;code&gt;gridui.ifca.es&lt;/code&gt; will stop pointing to the Scientific
+&lt;li&gt;April 7th 2014: &lt;code&gt;gridui.ifca.es&lt;/code&gt; will stop pointing to the Scientific
    Linux 5 machines, and will redirect users to the Scientific Linux 6
    machines.&lt;/li&gt;
 &lt;li&gt;April 14th 2014: &lt;code&gt;griduisl5.ifca.es&lt;/code&gt; will become unavailable, therefore
