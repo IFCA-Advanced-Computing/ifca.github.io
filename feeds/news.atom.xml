@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>grid.ifca.es</title><link href="http://grid.ifca.es/" rel="alternate"></link><link href="http://grid.ifca.es/feeds/news.atom.xml" rel="self"></link><id>http://grid.ifca.es/</id><updated>2014-03-31T00:00:00+02:00</updated><entry><title>POSTPONED: SL5 User Interfaces deprecation plan (2)</title><link href="http://grid.ifca.es/sl5-user-interfaces-deprecation-plan2.html" rel="alternate"></link><updated>2014-03-31T00:00:00+02:00</updated><author><name>aloga</name></author><id>tag:grid.ifca.es,2014-03-31:sl5-user-interfaces-deprecation-plan2.html</id><summary type="html">&lt;p&gt;Due to a mistake with the dates, the deprecation plan has been &lt;strong&gt;POSTPONED&lt;/strong&gt; until April 7th 2014.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>grid.ifca.es</title><link href="http://grid.ifca.es/" rel="alternate"></link><link href="http://grid.ifca.es/feeds/news.atom.xml" rel="self"></link><id>http://grid.ifca.es/</id><updated>2014-04-14T00:00:00+02:00</updated><entry><title>CVE-2014-0160 (Heartbleed) at IFCA</title><link href="http://grid.ifca.es/cve-2014-0160-heartbleed-at-ifca.html" rel="alternate"></link><updated>2014-04-14T00:00:00+02:00</updated><author><name>aloga</name></author><id>tag:grid.ifca.es,2014-04-14:cve-2014-0160-heartbleed-at-ifca.html</id><summary type="html">&lt;p&gt;AS you may have heard, a &lt;a href="http://www.openssl.org/news/secadv_20140407.txt"&gt;grave vulnerability in OpenSSL&lt;/a&gt;
+was disclosed Monday last week: &lt;a href="http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0160"&gt;CVE-2014-0160&lt;/a&gt;
+(also known as Heartbleed).&lt;/p&gt;
+&lt;p&gt;OpenSSL is a cryptographic software behind a huge number of the private
+communications across the internet (i.e. the &lt;code&gt;s&lt;/code&gt; of the &lt;code&gt;https&lt;/code&gt; but not
+only). Namely, it is responsible for verifying the identity of servers
+and clients (they are who they say they are) and for keeping
+communications private.&lt;/p&gt;
+&lt;p&gt;This vulnerability allows an attacker to reveal up to 64kB of memory
+to a connected client or server if they were using a vulnerable OpenSSL
+version. The information that the attacker can get may contain (among
+other things):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Usernames, passwords and sessions for the logged users.&lt;/li&gt;
+&lt;li&gt;Private keys from the servers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Currently we have no evidence that the attack has been made against our
+affected servers, although the vulnerability has been undetected for two
+years. However, we have taken the following actions so as to mitigate
+any possible effects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We have upgraded and patched all of our servers to a non-vulnerable
+   version of OpenSSL.&lt;/li&gt;
+&lt;li&gt;We have revoked all affected server's certificates.&lt;/li&gt;
+&lt;li&gt;We have deployed the new certificates last Friday.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What can you do?&lt;/h2&gt;
+&lt;p&gt;If you were using any version between &lt;code&gt;1.0.1&lt;/code&gt; and &lt;code&gt;1.0.1f&lt;/code&gt; probably you need
+to upgrade your OpenSSL version to a non vulnerable one. You should
+check your GNU/Linux distribution security advisories for more details
+on how to proceed.&lt;/p&gt;
+&lt;p&gt;Although we are not going to force the reset of the user's password, it
+is recommended that you change your password as soon as possible. Since
+this is a widespread vulnerability, the IFCA Computing team recommends
+that you change your password in any service that might have been
+affected and enable two-factor authentication whenever possible.&lt;/p&gt;
+&lt;h2&gt;More information&lt;/h2&gt;
+&lt;p&gt;If you encounter any problems or need more information, please do not
+hesitate to send an email to &lt;a href="mailto:grid.support@ifca.unican.es"&gt;our support helpdesk
+(grid.support@ifca.unican.es)&lt;/a&gt;&lt;/p&gt;</summary><category term="security"></category></entry><entry><title>POSTPONED: SL5 User Interfaces deprecation plan (2)</title><link href="http://grid.ifca.es/sl5-user-interfaces-deprecation-plan2.html" rel="alternate"></link><updated>2014-03-31T00:00:00+02:00</updated><author><name>aloga</name></author><id>tag:grid.ifca.es,2014-03-31:sl5-user-interfaces-deprecation-plan2.html</id><summary type="html">&lt;p&gt;Due to a mistake with the dates, the deprecation plan has been &lt;strong&gt;POSTPONED&lt;/strong&gt; until April 7th 2014.
 Please check the new plan below.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;After the postponed
