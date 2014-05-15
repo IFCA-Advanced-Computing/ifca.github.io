@@ -3,7 +3,7 @@
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-    <title>OpenStack Havana upgrade</title>
+    <title>Running OpenStack Havana services on mod_wsgi</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -12,9 +12,9 @@
     <!-- Open Graph tags -->
 
             <meta property="og:type" content="article"/>
-            <meta property="og:title" content="OpenStack Havana upgrade"/>
-            <meta property="og:url" content="./openstack-havana-upgrade.html"/>
-            <meta property="og:description" content="Upgrade of the cloud infrastructure to the latest release."/>
+            <meta property="og:title" content="Running OpenStack Havana services on mod_wsgi"/>
+            <meta property="og:url" content="./running-openstack-havana-services-on-mod_wsgi.html"/>
+            <meta property="og:description" content="This is a short manual explaining how to run the OpenStack services (Nova, Cinder, Keystone, Glance and Ceilometer) behind an Apache HTTP server using mod_wsgi."/>
 
     <!-- Bootstrap -->
         <link rel="stylesheet" href="./theme/css/bootstrap.min.css" type="text/css"/>
@@ -61,20 +61,43 @@
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="./openstack-havana-upgrade.html"
+                    <a href="./running-openstack-havana-services-on-mod_wsgi.html"
                        rel="bookmark"
-                       title="Permalink to OpenStack Havana upgrade">
-                        OpenStack Havana upgrade
+                       title="Permalink to Running OpenStack Havana services on mod_wsgi">
+                        Running OpenStack Havana services on mod_wsgi
                     </a>
                 </h1>
             </header>
             <div class="entry-content">
-                <p>On October the 29th (next Tuesday) we will upgrade our <a href="http://portal.cloud.ifca.es">OpenStack</a>
-cloud infrastrucutre from Grizzly to the latest <a href="http://www.openstack.org/software/havana/">Havana</a>
-release.</p>
-<p>Some of the Grid service and worker nodes are executed on top of this infrastructure, therefore
-some glitches in their availability are expected during the morning.</p>
-<p>You can check the <a href="https://goc.egi.eu/portal/index.php?Page_Type=Downtime&amp;id=12066">downtime on the GOCDB</a>.</p>
+                <p>It's been a while since we started deploying our OpenStack services behind
+an <a href="http://httpd.apache.org/">Apache HTTPD server</a>, using <code>mod_wsgi</code>. We started
+with Keystone, since it was something needed in order to get our
+<a href="https://ifca.github.io/keystone-voms/">VOMS Authentication Plugin</a> working, but
+afterwards we decided to homogenize our setup and move all the services from
+Eventlet to Apache.</p>
+<p>All the OpenStack services are WSGI applications, and therefore they can be moved
+easily from Eventlet to Apache running in prefork mode. Adam Young (one of the
+Keystone core developers) wrote almost two years ago a great article about this:
+"<a href="http://adam.younglogic.com/2012/03/keystone-should-move-to-apache-httpd/">Keystone should move to Apache HTTPD</a>".
+As you can infer from that article, there are several advantages that overcome de
+configuration overhead of this setup. Namely we switched from Eventlet to Apache because
+of the following reasons:</p>
+<ul>
+<li>You can use any of the <a href="http://httpd.apache.org/docs/2.2/howto/auth.html">authentication</a>
+ modules that are available for Apache and configure Keystone to use
+ <a href="http://docs.openstack.org/developer/keystone/external-auth.html">external authentication</a>.
+ We are using this for several modules, but the most important for us is the
+ <a href="https://ifca.github.io/keystone-voms/">VOMS Authentication Plugin</a>.</li>
+<li>SSL configuration is handled by Apache and not by the OpenStack service itself. Since we
+ are using <a href="http://puppetlabs.com/">Puppet</a>  in our deployments we only need to create a
+ template and apply it to all of our services, instead of configuring each of the services
+ individually.</li>
+</ul>
+<h2>Nova configuration</h2>
+<h2>Keystone configuration</h2>
+<h2>Glance configuration</h2>
+<h2>Cinder configuration</h2>
+<h2>Ceilometer configuration</h2>
                 <hr>
                 <div class="panel">
                     <div class="panel-body">
@@ -89,23 +112,19 @@ some glitches in their availability are expected during the morning.</p>
         <li class="list-group-item nospace">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="icon-calendar"></i>vie 25 octubre 2013
+        <i class="icon-calendar"></i>mar 18 marzo 2014
     </span>
         </li>
 
         <li class="list-group-item nospace">
     <span class="label label-default">Category</span>
-    <a href="./category/news.html">news</a>
+    <a href="./category/manuals.html">manuals</a>
         </li>
 
 
 <li class="list-group-item nospace">
 <span class="label label-default">Tags</span>
 	<a href="./tag/cloud.html">cloud</a>
-        /
-	<a href="./tag/upgrade.html">upgrade</a>
-        /
-	<a href="./tag/infrastructure.html">infrastructure</a>
         /
 	<a href="./tag/openstack.html">OpenStack</a>
 </li>

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>grid.ifca.es</title><link href="http://grid.ifca.es/" rel="alternate"></link><link href="http://grid.ifca.es/feeds/news.atom.xml" rel="self"></link><id>http://grid.ifca.es/</id><updated>2014-04-14T00:00:00+02:00</updated><entry><title>CVE-2014-0160 (Heartbleed) at IFCA</title><link href="http://grid.ifca.es/cve-2014-0160-heartbleed-at-ifca.html" rel="alternate"></link><updated>2014-04-14T00:00:00+02:00</updated><author><name>aloga</name></author><id>tag:grid.ifca.es,2014-04-14:cve-2014-0160-heartbleed-at-ifca.html</id><summary type="html">&lt;p&gt;AS you may have heard, a &lt;a href="http://www.openssl.org/news/secadv_20140407.txt"&gt;grave vulnerability in OpenSSL&lt;/a&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>grid.ifca.es</title><link href="http://grid.ifca.es/" rel="alternate"></link><link href="http://grid.ifca.es/feeds/news.atom.xml" rel="self"></link><id>http://grid.ifca.es/</id><updated>2014-05-15T00:00:00+02:00</updated><entry><title>Unexpected shutdown at IFCA</title><link href="http://grid.ifca.es/unexpected-shutdown-at-ifca.html" rel="alternate"></link><updated>2014-05-15T00:00:00+02:00</updated><author><name>aloga</name></author><id>tag:grid.ifca.es,2014-05-15:unexpected-shutdown-at-ifca.html</id><summary type="html">&lt;p&gt;The IFCA datacenter suffered an unexpected shutdown, caused by a
+power cut due to a malfunctioning electrical installation. We are
+working hard on restoring the situation.&lt;/p&gt;
+&lt;p&gt;Please visit this page for more updates about the recovery process.&lt;/p&gt;
+&lt;h2&gt;2014-05-15 12:00 CEST&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://portal.cloud.ifca.es"&gt;portal.cloud.ifca.es&lt;/a&gt; is now fully functional.&lt;/p&gt;
+&lt;h2&gt;2014-05-15 12:44 CEST&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://grid.ifca.es/wiki/Cluster/Usage"&gt;GRIDUI&lt;/a&gt; cluster has been restored. There's no access to the batch system though.&lt;/p&gt;</summary><category term="shutdown"></category></entry><entry><title>CVE-2014-0160 (Heartbleed) at IFCA</title><link href="http://grid.ifca.es/cve-2014-0160-heartbleed-at-ifca.html" rel="alternate"></link><updated>2014-04-14T00:00:00+02:00</updated><author><name>aloga</name></author><id>tag:grid.ifca.es,2014-04-14:cve-2014-0160-heartbleed-at-ifca.html</id><summary type="html">&lt;p&gt;AS you may have heard, a &lt;a href="http://www.openssl.org/news/secadv_20140407.txt"&gt;grave vulnerability in OpenSSL&lt;/a&gt;
 was disclosed Monday last week: &lt;a href="http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0160"&gt;CVE-2014-0160&lt;/a&gt;
 (also known as Heartbleed).&lt;/p&gt;
 &lt;p&gt;OpenSSL is a cryptographic software behind a huge number of the private
