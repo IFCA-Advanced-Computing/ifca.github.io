@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>grid.ifca.es</title><link href="http://grid.ifca.es/" rel="alternate"></link><link href="http://grid.ifca.es/feeds/ifca.atom.xml" rel="self"></link><id>http://grid.ifca.es/</id><updated>2014-03-18T16:00:00+01:00</updated><entry><title>Running OpenStack Havana services on mod_wsgi</title><link href="http://grid.ifca.es/running-openstack-havana-services-on-mod_wsgi.html" rel="alternate"></link><updated>2014-03-18T16:00:00+01:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2014-03-18:running-openstack-havana-services-on-mod_wsgi.html</id><summary type="html">&lt;p&gt;It's been a while since we started deploying our OpenStack services behind
+an &lt;a href="http://httpd.apache.org/"&gt;Apache HTTPD server&lt;/a&gt;, using &lt;code&gt;mod_wsgi&lt;/code&gt;. We started
+with Keystone, since it was something needed in order to get our
+&lt;a href="https://ifca.github.io/keystone-voms/"&gt;VOMS Authentication Plugin&lt;/a&gt; working, but
+afterwards we decided to homogenize our setup and move all the services from
+Eventlet to Apache.&lt;/p&gt;
+&lt;p&gt;All the OpenStack services are WSGI applications, and therefore they can be moved
+easily from Eventlet to Apache running in prefork mode. Adam Young (one of the
+Keystone core developers) wrote almost two years ago a great article about this:
+"&lt;a href="http://adam.younglogic.com/2012/03/keystone-should-move-to-apache-httpd/"&gt;Keystone should move to Apache HTTPD&lt;/a&gt;".
+As you can infer from that article, there are several advantages that overcome de
+configuration overhead of this setup. Namely we switched from Eventlet to Apache because
+of the following reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can use any of the &lt;a href="http://httpd.apache.org/docs/2.2/howto/auth.html"&gt;authentication&lt;/a&gt;
+ modules that are available for Apache and configure Keystone to use
+ &lt;a href="http://docs.openstack.org/developer/keystone/external-auth.html"&gt;external authentication&lt;/a&gt;.
+ We are using this for several modules, but the most important for us is the
+ &lt;a href="https://ifca.github.io/keystone-voms/"&gt;VOMS Authentication Plugin&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;SSL configuration is handled by Apache and not by the OpenStack service itself. Since we
+ are using &lt;a href="http://puppetlabs.com/"&gt;Puppet&lt;/a&gt;  in our deployments we only need to create a
+ template and apply it to all of our services, instead of configuring each of the services
+ individually.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Nova configuration&lt;/h2&gt;
+&lt;h2&gt;Keystone configuration&lt;/h2&gt;
+&lt;h2&gt;Glance configuration&lt;/h2&gt;
+&lt;h2&gt;Cinder configuration&lt;/h2&gt;
+&lt;h2&gt;Ceilometer configuration&lt;/h2&gt;</summary><category term="cloud"></category><category term="OpenStack"></category></entry><entry><title>SL5 User Interfaces deprecation plan</title><link href="http://grid.ifca.es/sl5-user-interfaces-deprecation-plan.html" rel="alternate"></link><updated>2013-11-25T00:00:00+01:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2013-11-25:sl5-user-interfaces-deprecation-plan.html</id><summary type="html">&lt;p&gt;The Scientific Linux 5 user interfaces have become obsolete and will be
+deprecated soon, according to the following deprecation plan:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;December 03th 2013: &lt;code&gt;gridui.ifca.es&lt;/code&gt; will stop pointing to the Scientific
+   Linux 5 machines, and will redirect users to the Scientific Linux 6
+   machines.&lt;/li&gt;
+&lt;li&gt;December 10th 2013: &lt;code&gt;griduisl5.ifca.es&lt;/code&gt; will become unavailable, therefore
+   there will be no access to the Scientific Linux 5 machines anymore. Please,
+   update your working environment before that date.&lt;/li&gt;
+&lt;li&gt;January 2014: Deletion and removal of machines.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;As you can see we have established a retention policy of the deprecated
+machines from December 10th 2013 to January 2014. This is to ensure a working
+environment just in case it is impossible to migrate any software environment
+before December 10th (limited access will be granted to those users that might
+need access to them). However, we encourage users, groups and software
+administrators to move and adapt their environments to Scientific Linux 6 as
+soon as possible if it is not done yet.&lt;/p&gt;
+&lt;p&gt;If there is any user, group or software administrator that cannot reach the
+described deadline, please open a ticket on &lt;a href="mailto:grid.support@ifca.unican.es"&gt;our support helpdesk (
+grid.support@ifca.unican.es)&lt;/a&gt; as soon as
+possible, explaining your situation.&lt;/p&gt;</summary><category term="grid"></category><category term="user interface"></category><category term="Scientific Linux 5"></category></entry><entry><title>SL6 User Interfaces at your disposal</title><link href="http://grid.ifca.es/sl6-user-interfaces-at-your-disposal.html" rel="alternate"></link><updated>2013-10-28T00:00:00+01:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2013-10-28:sl6-user-interfaces-at-your-disposal.html</id><summary type="html">&lt;p&gt;All the users with access to IFCA cluster can now make use of Scientific Linux 6-based
+user interfaces. To access them just connect via SSH protocol to &lt;code&gt;griduisl6.ifca.es&lt;/code&gt; 
+and you will be redirected to any of the available servers.&lt;/p&gt;
+&lt;p&gt;The most noticeable fact in the new SL6 pool is that they are running over the OpenStack
+cloud infrastructure hosted at IFCA. As a result &lt;code&gt;griduiXX&lt;/code&gt; hostnames will no longer appear, 
+instead &lt;code&gt;cloudprv&lt;/code&gt; identifiers will be used from now on. The performance will not be neither
+hit nor enhanced, since the already existing ones (SL5) are also virtualized.&lt;/p&gt;
+&lt;p&gt;Our intention is to progresivelly move to a fully SL6-based UI stack, so we encourage users
+to try them and report any incidence that can occur. The deadline to drop the old SL5 servers
+is by the end of the year 2013, however this date can be postponed if needed. We will send 
+a reminder when this deadline approaches.&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;</summary><category term="grid"></category><category term="user interface"></category><category term="Scientific Linux 6"></category><category term="infrastructure"></category><category term="cloud"></category></entry><entry><title>OpenStack Havana upgrade</title><link href="http://grid.ifca.es/openstack-havana-upgrade.html" rel="alternate"></link><updated>2013-10-25T00:00:00+02:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2013-10-25:openstack-havana-upgrade.html</id><summary type="html">&lt;p&gt;On October the 29th (next Tuesday) we will upgrade our &lt;a href="http://portal.cloud.ifca.es"&gt;OpenStack&lt;/a&gt;
+cloud infrastrucutre from Grizzly to the latest &lt;a href="http://www.openstack.org/software/havana/"&gt;Havana&lt;/a&gt;
+release.&lt;/p&gt;
+&lt;p&gt;Some of the Grid service and worker nodes are executed on top of this infrastructure, therefore
+some glitches in their availability are expected during the morning.&lt;/p&gt;
+&lt;p&gt;You can check the &lt;a href="https://goc.egi.eu/portal/index.php?Page_Type=Downtime&amp;amp;id=12066"&gt;downtime on the GOCDB&lt;/a&gt;.&lt;/p&gt;</summary><category term="cloud"></category><category term="upgrade"></category><category term="infrastructure"></category><category term="OpenStack"></category></entry></feed>

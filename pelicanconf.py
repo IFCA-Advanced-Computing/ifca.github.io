@@ -37,9 +37,11 @@ THEME = "themes/ifca"
 GITHUB_USER = "IFCA"
 GITHUB_REPO_COUNT = 20
 
-MENUITEMS = (('Home', '/'),
-             ('Blog', '/archives.html'),
-             ('Wiki', 'http://grid.ifca.es/wiki'),
-             ('Get support', 'http://support.ifca.es/'),)
+MENUITEMS = (
+    ('Home', '/'),
+    ('Blog', '/archives.html'),
+    ('Wiki', 'http://grid.ifca.es/wiki'),
+#    ('Support', '/support.html'),
+)
 
 ADDTHIS_PROFILE="xa-5257ddb854d1e8cd"
