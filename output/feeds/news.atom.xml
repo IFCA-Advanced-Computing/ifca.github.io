@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<feed xmlns="http://www.w3.org/2005/Atom"><title>grid.ifca.es - news</title><link href="http://grid.ifca.es/" rel="alternate"></link><link href="http://grid.ifca.es/feeds/news.atom.xml" rel="self"></link><id>http://grid.ifca.es/</id><updated>2014-05-15T00:00:00+02:00</updated><entry><title>Unexpected shutdown at IFCA</title><link href="http://grid.ifca.es/unexpected-shutdown-at-ifca.html" rel="alternate"></link><published>2014-05-15T00:00:00+02:00</published><updated>2014-05-15T00:00:00+02:00</updated><author><name>aloga</name></author><id>tag:grid.ifca.es,2014-05-15:/unexpected-shutdown-at-ifca.html</id><summary type="html">&lt;p&gt;Information about unexpected shutdown at IFCA.&lt;/p&gt;</summary><content type="html">&lt;p&gt;The IFCA datacenter suffered an unexpected shutdown, caused by a
-=======
-<feed xmlns="http://www.w3.org/2005/Atom"><title>grid.ifca.es</title><link href="/" rel="alternate"></link><link href="/feeds/news.atom.xml" rel="self"></link><id>/</id><updated>2015-02-11T00:00:00+01:00</updated><entry><title>Unexpected outage at IFCA</title><link href="/unexpected-outage-at-ifca.html" rel="alternate"></link><updated>2015-02-11T00:00:00+01:00</updated><author><name>aloga</name></author><id>tag:,2015-02-11:unexpected-outage-at-ifca.html</id><summary type="html">&lt;p&gt;The IFCA datacenter suffered an unexpected outage as a result of a 5-minute power cut 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>grid.ifca.es - news</title><link href="http://grid.ifca.es/" rel="alternate"></link><link href="http://grid.ifca.es/feeds/news.atom.xml" rel="self"></link><id>http://grid.ifca.es/</id><updated>2015-02-11T00:00:00+01:00</updated><entry><title>Unexpected outage at IFCA</title><link href="http://grid.ifca.es/unexpected-outage-at-ifca.html" rel="alternate"></link><published>2015-02-11T00:00:00+01:00</published><updated>2015-02-11T00:00:00+01:00</updated><author><name>aloga</name></author><id>tag:grid.ifca.es,2015-02-11:/unexpected-outage-at-ifca.html</id><summary type="html">&lt;p&gt;Note about the unexpected outage at IFCA occurred on Feb 11st 2015.&lt;/p&gt;</summary><content type="html">&lt;p&gt;The IFCA datacenter suffered an unexpected outage as a result of a 5-minute power cut 
 suffered at multiple points within the University area. All the services not attached
 to the uninterruptible power supply units were affected and are being restored.&lt;/p&gt;
 &lt;p&gt;Sorry for the inconveniences.&lt;/p&gt;
@@ -16,8 +13,7 @@ to the uninterruptible power supply units were affected and are being restored.&
 &lt;li&gt;&lt;span class="text-muted"&gt;2015-02-11 12:32 CEST&lt;/span&gt; &lt;span class="text-success"&gt;Grid services (except UIs) fully available (not affected).&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;span class="text-muted"&gt;2015-02-11 12:32 CEST&lt;/span&gt; &lt;span class="text-success"&gt;NFS and iSCSI storage fully available (not affected).&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;span class="text-muted"&gt;2015-02-11 12:32 CEST&lt;/span&gt; &lt;span class="text-success"&gt;IT management services fully available (not affected).&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="shutdown outage"></category></entry><entry><title>Unexpected shutdown at IFCA</title><link href="/unexpected-shutdown-at-ifca.html" rel="alternate"></link><updated>2014-05-15T00:00:00+02:00</updated><author><name>aloga</name></author><id>tag:,2014-05-15:unexpected-shutdown-at-ifca.html</id><summary type="html">&lt;p&gt;The IFCA datacenter suffered an unexpected shutdown, caused by a
->>>>>>> a475c30a9d67e74de5c9c1e7a73ac1eb44da2623
+&lt;/ul&gt;</content><category term="shutdown outage"></category></entry><entry><title>Unexpected shutdown at IFCA</title><link href="http://grid.ifca.es/unexpected-shutdown-at-ifca.html" rel="alternate"></link><published>2014-05-15T00:00:00+02:00</published><updated>2014-05-15T00:00:00+02:00</updated><author><name>aloga</name></author><id>tag:grid.ifca.es,2014-05-15:/unexpected-shutdown-at-ifca.html</id><summary type="html">&lt;p&gt;Information about unexpected shutdown at IFCA.&lt;/p&gt;</summary><content type="html">&lt;p&gt;The IFCA datacenter suffered an unexpected shutdown, caused by a
 power cut due to a malfunctioning electrical installation. We are
 working hard on restoring the situation.&lt;/p&gt;
 &lt;p&gt;Please visit this page for more updates about the recovery process.&lt;/p&gt;
@@ -45,11 +41,7 @@ working hard on restoring the situation.&lt;/p&gt;
 &lt;p&gt;&lt;span class="text-muted"&gt;2014-04-14 18:00 CEST&lt;/span&gt; &lt;span class="text-danger"&gt;Power cut.&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Due to a malfunctioning electrical installation the IFCA datacenter suffered an unexpected power cut. Only critical systems were restored.&lt;/p&gt;
 &lt;/li&gt;
-<<<<<<< HEAD
 &lt;/ul&gt;</content><category term="shutdown"></category></entry><entry><title>CVE-2014-0160 (Heartbleed) at IFCA</title><link href="http://grid.ifca.es/cve-2014-0160-heartbleed-at-ifca.html" rel="alternate"></link><published>2014-04-14T00:00:00+02:00</published><updated>2014-04-14T00:00:00+02:00</updated><author><name>aloga</name></author><id>tag:grid.ifca.es,2014-04-14:/cve-2014-0160-heartbleed-at-ifca.html</id><summary type="html">&lt;p&gt;Important information about CVE-2014-0160 at IFCA.&lt;/p&gt;</summary><content type="html">&lt;p&gt;AS you may have heard, a &lt;a href="http://www.openssl.org/news/secadv_20140407.txt"&gt;grave vulnerability in OpenSSL&lt;/a&gt;
-=======
-&lt;/ul&gt;</summary><category term="shutdown"></category></entry><entry><title>CVE-2014-0160 (Heartbleed) at IFCA</title><link href="/cve-2014-0160-heartbleed-at-ifca.html" rel="alternate"></link><updated>2014-04-14T00:00:00+02:00</updated><author><name>aloga</name></author><id>tag:,2014-04-14:cve-2014-0160-heartbleed-at-ifca.html</id><summary type="html">&lt;p&gt;AS you may have heard, a &lt;a href="http://www.openssl.org/news/secadv_20140407.txt"&gt;grave vulnerability in OpenSSL&lt;/a&gt;
->>>>>>> a475c30a9d67e74de5c9c1e7a73ac1eb44da2623
 was disclosed Monday last week: &lt;a href="http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0160"&gt;CVE-2014-0160&lt;/a&gt;
 (also known as Heartbleed).&lt;/p&gt;
 &lt;p&gt;OpenSSL is a cryptographic software behind a huge number of the private
@@ -88,15 +80,11 @@ affected and enable two-factor authentication whenever possible.&lt;/p&gt;
 &lt;h2&gt;More information&lt;/h2&gt;
 &lt;p&gt;If you encounter any problems or need more information, please do not
 hesitate to send an email to &lt;a href="mailto:grid.support@ifca.unican.es"&gt;our support helpdesk
-<<<<<<< HEAD
 (grid.support@ifca.unican.es)&lt;/a&gt;&lt;/p&gt;</content><category term="security"></category></entry><entry><title>POSTPONED: SL5 User Interfaces deprecation plan (2)</title><link href="http://grid.ifca.es/sl5-user-interfaces-deprecation-plan2.html" rel="alternate"></link><published>2014-03-31T00:00:00+02:00</published><updated>2014-03-31T00:00:00+02:00</updated><author><name>aloga</name></author><id>tag:grid.ifca.es,2014-03-31:/sl5-user-interfaces-deprecation-plan2.html</id><summary type="html">&lt;p&gt;NEW Dates for the Scientific Linux 5-based user interfaces (UIs) deprecation plan.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Due to a mistake with the dates, the deprecation plan has been &lt;strong&gt;POSTPONED&lt;/strong&gt; until April 7th 2014.
-=======
-(grid.support@ifca.unican.es)&lt;/a&gt;&lt;/p&gt;</summary><category term="security"></category></entry><entry><title>POSTPONED: SL5 User Interfaces deprecation plan (2)</title><link href="/sl5-user-interfaces-deprecation-plan2.html" rel="alternate"></link><updated>2014-03-31T00:00:00+02:00</updated><author><name>aloga</name></author><id>tag:,2014-03-31:sl5-user-interfaces-deprecation-plan2.html</id><summary type="html">&lt;p&gt;Due to a mistake with the dates, the deprecation plan has been &lt;strong&gt;POSTPONED&lt;/strong&gt; until April 7th 2014.
->>>>>>> a475c30a9d67e74de5c9c1e7a73ac1eb44da2623
 Please check the new plan below.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;After the postponed
-&lt;a href="/sl5-user-interfaces-deprecation-plan.html"&gt;SLC5 deprecation plan&lt;/a&gt;
+&lt;a href="http://grid.ifca.es/sl5-user-interfaces-deprecation-plan.html"&gt;SLC5 deprecation plan&lt;/a&gt;
 we have restablish the procedure to deprecate the Scientific Linux 5 user interfaces.
 The operating system on these machines has become obsolete and are going to be removed
 according to the following deprecation plan.&lt;/p&gt;
@@ -165,11 +153,7 @@ In order to request a Scientific Linux 5 machine you must specify the complex &l
 &lt;h2&gt;Support&lt;/h2&gt;
 &lt;p&gt;If there is any user, group or software administrator that cannot reach the
 described deadline, please open a ticket on &lt;a href="https://support.ifca.es/"&gt;our support helpdesk&lt;/a&gt;
-<<<<<<< HEAD
 as soon as possible, explaining your situation.&lt;/p&gt;</content><category term="grid"></category><category term="user interface"></category><category term="Scientific Linux 5"></category></entry><entry><title>SL5 User Interfaces deprecation plan</title><link href="http://grid.ifca.es/sl5-user-interfaces-deprecation-plan.html" rel="alternate"></link><published>2013-11-25T00:00:00+01:00</published><updated>2013-11-25T00:00:00+01:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2013-11-25:/sl5-user-interfaces-deprecation-plan.html</id><summary type="html">&lt;p&gt;Dates for the Scientific Linux 5-based user interfaces (UIs) deprecation plan.&lt;/p&gt;</summary><content type="html">&lt;p&gt;The Scientific Linux 5 user interfaces have become obsolete and will be
-=======
-as soon as possible, explaining your situation.&lt;/p&gt;</summary><category term="grid"></category><category term="user interface"></category><category term="Scientific Linux 5"></category></entry><entry><title>SL5 User Interfaces deprecation plan</title><link href="/sl5-user-interfaces-deprecation-plan.html" rel="alternate"></link><updated>2013-11-25T00:00:00+01:00</updated><author><name>IFCA</name></author><id>tag:,2013-11-25:sl5-user-interfaces-deprecation-plan.html</id><summary type="html">&lt;p&gt;The Scientific Linux 5 user interfaces have become obsolete and will be
->>>>>>> a475c30a9d67e74de5c9c1e7a73ac1eb44da2623
 deprecated soon, according to the following deprecation plan:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;December 03th 2013: &lt;code&gt;gridui.ifca.es&lt;/code&gt; will stop pointing to the Scientific
@@ -190,11 +174,7 @@ soon as possible if it is not done yet.&lt;/p&gt;
 &lt;p&gt;If there is any user, group or software administrator that cannot reach the
 described deadline, please open a ticket on &lt;a href="mailto:grid.support@ifca.unican.es"&gt;our support helpdesk (
 grid.support@ifca.unican.es)&lt;/a&gt; as soon as
-<<<<<<< HEAD
 possible, explaining your situation.&lt;/p&gt;</content><category term="grid"></category><category term="user interface"></category><category term="Scientific Linux 5"></category></entry><entry><title>SL6 User Interfaces at your disposal</title><link href="http://grid.ifca.es/sl6-user-interfaces-at-your-disposal.html" rel="alternate"></link><published>2013-10-28T00:00:00+01:00</published><updated>2013-10-28T00:00:00+01:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2013-10-28:/sl6-user-interfaces-at-your-disposal.html</id><summary type="html">&lt;p&gt;Scientific Linux 6-based user interfaces (UIs) available at IFCA Cluster.&lt;/p&gt;</summary><content type="html">&lt;p&gt;All the users with access to IFCA cluster can now make use of Scientific Linux 6-based
-=======
-possible, explaining your situation.&lt;/p&gt;</summary><category term="grid"></category><category term="user interface"></category><category term="Scientific Linux 5"></category></entry><entry><title>SL6 User Interfaces at your disposal</title><link href="/sl6-user-interfaces-at-your-disposal.html" rel="alternate"></link><updated>2013-10-28T00:00:00+01:00</updated><author><name>IFCA</name></author><id>tag:,2013-10-28:sl6-user-interfaces-at-your-disposal.html</id><summary type="html">&lt;p&gt;All the users with access to IFCA cluster can now make use of Scientific Linux 6-based
->>>>>>> a475c30a9d67e74de5c9c1e7a73ac1eb44da2623
 user interfaces. To access them just connect via SSH protocol to &lt;code&gt;griduisl6.ifca.es&lt;/code&gt; 
 and you will be redirected to any of the available servers.&lt;/p&gt;
 &lt;p&gt;The most noticeable fact in the new SL6 pool is that they are running over the OpenStack
@@ -205,11 +185,7 @@ hit nor enhanced, since the already existing ones (SL5) are also virtualized.&lt
 to try them and report any incidence that can occur. The deadline to drop the old SL5 servers
 is by the end of the year 2013, however this date can be postponed if needed. We will send 
 a reminder when this deadline approaches.&lt;/p&gt;
-<<<<<<< HEAD
 &lt;p&gt;Enjoy!&lt;/p&gt;</content><category term="grid"></category><category term="user interface"></category><category term="Scientific Linux 6"></category><category term="infrastructure"></category><category term="cloud"></category></entry><entry><title>OpenStack Havana upgrade</title><link href="http://grid.ifca.es/openstack-havana-upgrade.html" rel="alternate"></link><published>2013-10-25T00:00:00+02:00</published><updated>2013-10-25T00:00:00+02:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2013-10-25:/openstack-havana-upgrade.html</id><summary type="html">&lt;p&gt;Upgrade of the cloud infrastructure to the latest release.&lt;/p&gt;</summary><content type="html">&lt;p&gt;On October the 29th (next Tuesday) we will upgrade our &lt;a href="http://portal.cloud.ifca.es"&gt;OpenStack&lt;/a&gt;
-=======
-&lt;p&gt;Enjoy!&lt;/p&gt;</summary><category term="grid"></category><category term="user interface"></category><category term="Scientific Linux 6"></category><category term="infrastructure"></category><category term="cloud"></category></entry><entry><title>OpenStack Havana upgrade</title><link href="/openstack-havana-upgrade.html" rel="alternate"></link><updated>2013-10-25T00:00:00+02:00</updated><author><name>IFCA</name></author><id>tag:,2013-10-25:openstack-havana-upgrade.html</id><summary type="html">&lt;p&gt;On October the 29th (next Tuesday) we will upgrade our &lt;a href="http://portal.cloud.ifca.es"&gt;OpenStack&lt;/a&gt;
->>>>>>> a475c30a9d67e74de5c9c1e7a73ac1eb44da2623
 cloud infrastrucutre from Grizzly to the latest &lt;a href="http://www.openstack.org/software/havana/"&gt;Havana&lt;/a&gt;
 release.&lt;/p&gt;
 &lt;p&gt;Some of the Grid service and worker nodes are executed on top of this infrastructure, therefore
