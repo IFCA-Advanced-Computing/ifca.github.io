@@ -22,7 +22,7 @@ LINKS =  (('Pelican', 'http://getpelican.com/'),
           ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('Twitter', 'https://twitter.com/IFCACluster'),)
+SOCIAL = (('Twitter', 'https://twitter.com/IFCA_Computing'),)
 
 DEFAULT_PAGINATION = 10
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>grid.ifca.es</title><link href="http://grid.ifca.es/" rel="alternate"></link><link href="http://grid.ifca.es/feeds/all.atom.xml" rel="self"></link><id>http://grid.ifca.es/</id><updated>2014-05-15T00:00:00+02:00</updated><entry><title>Unexpected shutdown at IFCA</title><link href="http://grid.ifca.es/unexpected-shutdown-at-ifca.html" rel="alternate"></link><updated>2014-05-15T00:00:00+02:00</updated><author><name>aloga</name></author><id>tag:grid.ifca.es,2014-05-15:unexpected-shutdown-at-ifca.html</id><summary type="html">&lt;p&gt;The IFCA datacenter suffered an unexpected shutdown, caused by a
+<feed xmlns="http://www.w3.org/2005/Atom"><title>grid.ifca.es</title><link href="http://grid.ifca.es/" rel="alternate"></link><link href="http://grid.ifca.es/feeds/all.atom.xml" rel="self"></link><id>http://grid.ifca.es/</id><updated>2014-05-15T00:00:00+02:00</updated><entry><title>Unexpected shutdown at IFCA</title><link href="http://grid.ifca.es/unexpected-shutdown-at-ifca.html" rel="alternate"></link><published>2014-05-15T00:00:00+02:00</published><updated>2014-05-15T00:00:00+02:00</updated><author><name>aloga</name></author><id>tag:grid.ifca.es,2014-05-15:/unexpected-shutdown-at-ifca.html</id><summary type="html">&lt;p&gt;Information about unexpected shutdown at IFCA.&lt;/p&gt;</summary><content type="html">&lt;p&gt;The IFCA datacenter suffered an unexpected shutdown, caused by a
 power cut due to a malfunctioning electrical installation. We are
 working hard on restoring the situation.&lt;/p&gt;
 &lt;p&gt;Please visit this page for more updates about the recovery process.&lt;/p&gt;
@@ -27,7 +27,7 @@ working hard on restoring the situation.&lt;/p&gt;
 &lt;p&gt;&lt;span class="text-muted"&gt;2014-04-14 18:00 CEST&lt;/span&gt; &lt;span class="text-danger"&gt;Power cut.&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Due to a malfunctioning electrical installation the IFCA datacenter suffered an unexpected power cut. Only critical systems were restored.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</summary><category term="shutdown"></category></entry><entry><title>CVE-2014-0160 (Heartbleed) at IFCA</title><link href="http://grid.ifca.es/cve-2014-0160-heartbleed-at-ifca.html" rel="alternate"></link><updated>2014-04-14T00:00:00+02:00</updated><author><name>aloga</name></author><id>tag:grid.ifca.es,2014-04-14:cve-2014-0160-heartbleed-at-ifca.html</id><summary type="html">&lt;p&gt;AS you may have heard, a &lt;a href="http://www.openssl.org/news/secadv_20140407.txt"&gt;grave vulnerability in OpenSSL&lt;/a&gt;
+&lt;/ul&gt;</content><category term="shutdown"></category></entry><entry><title>CVE-2014-0160 (Heartbleed) at IFCA</title><link href="http://grid.ifca.es/cve-2014-0160-heartbleed-at-ifca.html" rel="alternate"></link><published>2014-04-14T00:00:00+02:00</published><updated>2014-04-14T00:00:00+02:00</updated><author><name>aloga</name></author><id>tag:grid.ifca.es,2014-04-14:/cve-2014-0160-heartbleed-at-ifca.html</id><summary type="html">&lt;p&gt;Important information about CVE-2014-0160 at IFCA.&lt;/p&gt;</summary><content type="html">&lt;p&gt;AS you may have heard, a &lt;a href="http://www.openssl.org/news/secadv_20140407.txt"&gt;grave vulnerability in OpenSSL&lt;/a&gt;
 was disclosed Monday last week: &lt;a href="http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0160"&gt;CVE-2014-0160&lt;/a&gt;
 (also known as Heartbleed).&lt;/p&gt;
 &lt;p&gt;OpenSSL is a cryptographic software behind a huge number of the private
@@ -66,9 +66,9 @@ affected and enable two-factor authentication whenever possible.&lt;/p&gt;
 &lt;h2&gt;More information&lt;/h2&gt;
 &lt;p&gt;If you encounter any problems or need more information, please do not
 hesitate to send an email to &lt;a href="mailto:grid.support@ifca.unican.es"&gt;our support helpdesk
-(grid.support@ifca.unican.es)&lt;/a&gt;&lt;/p&gt;</summary><category term="security"></category></entry><entry><title>POSTPONED: SL5 User Interfaces deprecation plan (2)</title><link href="http://grid.ifca.es/sl5-user-interfaces-deprecation-plan2.html" rel="alternate"></link><updated>2014-03-31T00:00:00+02:00</updated><author><name>aloga</name></author><id>tag:grid.ifca.es,2014-03-31:sl5-user-interfaces-deprecation-plan2.html</id><summary type="html">&lt;p&gt;Due to a mistake with the dates, the deprecation plan has been &lt;strong&gt;POSTPONED&lt;/strong&gt; until April 7th 2014.
+(grid.support@ifca.unican.es)&lt;/a&gt;&lt;/p&gt;</content><category term="security"></category></entry><entry><title>POSTPONED: SL5 User Interfaces deprecation plan (2)</title><link href="http://grid.ifca.es/sl5-user-interfaces-deprecation-plan2.html" rel="alternate"></link><published>2014-03-31T00:00:00+02:00</published><updated>2014-03-31T00:00:00+02:00</updated><author><name>aloga</name></author><id>tag:grid.ifca.es,2014-03-31:/sl5-user-interfaces-deprecation-plan2.html</id><summary type="html">&lt;p&gt;NEW Dates for the Scientific Linux 5-based user interfaces (UIs) deprecation plan.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Due to a mistake with the dates, the deprecation plan has been &lt;strong&gt;POSTPONED&lt;/strong&gt; until April 7th 2014.
 Please check the new plan below.&lt;/p&gt;
-&lt;hr /&gt;
+&lt;hr&gt;
 &lt;p&gt;After the postponed
 &lt;a href="http://grid.ifca.es/sl5-user-interfaces-deprecation-plan.html"&gt;SLC5 deprecation plan&lt;/a&gt;
 we have restablish the procedure to deprecate the Scientific Linux 5 user interfaces.
@@ -87,7 +87,7 @@ according to the following deprecation plan.&lt;/p&gt;
 &lt;h2&gt;SSH warnings about host identification changed&lt;/h2&gt;
 &lt;p&gt;Please take into account that on April 7th the fingerprint of &lt;code&gt;gridui.ifca.es&lt;/code&gt; will
 change. It is possible that you will get messages like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;user@mymachine:~ $&lt;/span&gt; ssh user@gridui.ifca.es
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gp"&gt;user@mymachine:~ $&lt;/span&gt; ssh user@gridui.ifca.es
 &lt;span class="go"&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;/span&gt;
 &lt;span class="go"&gt;@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @&lt;/span&gt;
 &lt;span class="go"&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;/span&gt;
@@ -107,8 +107,8 @@ change. It is possible that you will get messages like this:&lt;/p&gt;
 
 &lt;p&gt;Check that the new fingerprint is &lt;strong&gt;exactly&lt;/strong&gt; &lt;code&gt;29:80:9b:28:e7:8a:00:fe:6c:60:ef:e6:a6:71:33:bd&lt;/code&gt;. If it is, then
 you can safely remove the offending match with the following command:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;user@mymachine:~ $&lt;/span&gt; ssh-keygen -f &lt;span class="s2"&gt;&amp;quot;/home/user/.ssh/known_hosts&amp;quot;&lt;/span&gt; -R gridui.ifca.es
-&lt;span class="go"&gt;# Host griduisl6 found: line 58 type RSA&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gp"&gt;user@mymachine:~ $&lt;/span&gt; ssh-keygen -f &lt;span class="s2"&gt;&amp;quot;/home/user/.ssh/known_hosts&amp;quot;&lt;/span&gt; -R gridui.ifca.es
+&lt;span class="gp"&gt;#&lt;/span&gt; Host griduisl6 found: line &lt;span class="m"&gt;58&lt;/span&gt; &lt;span class="nb"&gt;type&lt;/span&gt; RSA
 &lt;span class="go"&gt;/home/user/.ssh/known_hosts updated.&lt;/span&gt;
 &lt;span class="go"&gt;Original contents retained as /home/user/.ssh/known_hosts.old&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -118,12 +118,12 @@ you can safely remove the offending match with the following command:&lt;/p&gt;
 &lt;p&gt;Access to Scientific Linux 5 machines is still provided trough the
 &lt;a href="https://grid.ifca.es/wiki/Cluster/Usage#Access_to_Scientific_Linux_5_machines"&gt;batch system&lt;/a&gt;.
 In order to request a Scientific Linux 5 machine you must specify the complex &lt;code&gt;scientificlinux5&lt;/code&gt; like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;user@cloudprv-10-0:~ $&lt;/span&gt; qsub -l &lt;span class="nv"&gt;scientificlinux5&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;true&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;...&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gp"&gt;user@cloudprv-10-0:~ $&lt;/span&gt; qsub -l &lt;span class="nv"&gt;scientificlinux5&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;true&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;...&lt;span class="o"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;If you want an interactive session, request one with &lt;code&gt;qlogin&lt;/code&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;user@cloudprv-10-0:~ $&lt;/span&gt; qlogin -l &lt;span class="nv"&gt;scientificlinux5&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;true&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;...&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gp"&gt;user@cloudprv-10-0:~ $&lt;/span&gt; qlogin -l &lt;span class="nv"&gt;scientificlinux5&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;true&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;...&lt;span class="o"&gt;)&lt;/span&gt;
 &lt;span class="go"&gt;JSV &amp;quot;/nfs4/opt/gridengine/util/resources/jsv/jsv-IFCA.tcl&amp;quot; has been started&lt;/span&gt;
 &lt;span class="go"&gt;JSV &amp;quot;/nfs4/opt/gridengine/util/resources/jsv/jsv-IFCA.tcl&amp;quot; has been stopped&lt;/span&gt;
 &lt;span class="go"&gt;Your job 1822278 (&amp;quot;QLOGIN&amp;quot;) has been submitted&lt;/span&gt;
@@ -139,7 +139,7 @@ In order to request a Scientific Linux 5 machine you must specify the complex &l
 &lt;h2&gt;Support&lt;/h2&gt;
 &lt;p&gt;If there is any user, group or software administrator that cannot reach the
 described deadline, please open a ticket on &lt;a href="https://support.ifca.es/"&gt;our support helpdesk&lt;/a&gt;
-as soon as possible, explaining your situation.&lt;/p&gt;</summary><category term="grid"></category><category term="user interface"></category><category term="Scientific Linux 5"></category></entry><entry><title>Running OpenStack Havana services on mod_wsgi</title><link href="http://grid.ifca.es/running-openstack-havana-services-on-mod_wsgi.html" rel="alternate"></link><updated>2014-03-18T16:00:00+01:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2014-03-18:running-openstack-havana-services-on-mod_wsgi.html</id><summary type="html">&lt;p&gt;It's been a while since we started deploying our OpenStack services behind
+as soon as possible, explaining your situation.&lt;/p&gt;</content><category term="grid"></category><category term="user interface"></category><category term="Scientific Linux 5"></category></entry><entry><title>Running OpenStack Havana services on mod_wsgi</title><link href="http://grid.ifca.es/running-openstack-havana-services-on-mod_wsgi.html" rel="alternate"></link><published>2014-03-18T16:00:00+01:00</published><updated>2014-03-18T16:00:00+01:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2014-03-18:/running-openstack-havana-services-on-mod_wsgi.html</id><summary type="html">&lt;p&gt;This is a short manual explaining how to run the OpenStack services (Nova, Cinder, Keystone, Glance and Ceilometer) behind an Apache HTTP server using mod_wsgi.&lt;/p&gt;</summary><content type="html">&lt;p&gt;It's been a while since we started deploying our OpenStack services behind
 an &lt;a href="http://httpd.apache.org/"&gt;Apache HTTPD server&lt;/a&gt;, using &lt;code&gt;mod_wsgi&lt;/code&gt;. We started
 with Keystone, since it was something needed in order to get our
 &lt;a href="https://ifca.github.io/keystone-voms/"&gt;VOMS Authentication Plugin&lt;/a&gt; working, but
@@ -167,7 +167,7 @@ of the following reasons:&lt;/p&gt;
 &lt;h2&gt;Keystone configuration&lt;/h2&gt;
 &lt;h2&gt;Glance configuration&lt;/h2&gt;
 &lt;h2&gt;Cinder configuration&lt;/h2&gt;
-&lt;h2&gt;Ceilometer configuration&lt;/h2&gt;</summary><category term="cloud"></category><category term="OpenStack"></category></entry><entry><title>SL5 User Interfaces deprecation plan</title><link href="http://grid.ifca.es/sl5-user-interfaces-deprecation-plan.html" rel="alternate"></link><updated>2013-11-25T00:00:00+01:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2013-11-25:sl5-user-interfaces-deprecation-plan.html</id><summary type="html">&lt;p&gt;The Scientific Linux 5 user interfaces have become obsolete and will be
+&lt;h2&gt;Ceilometer configuration&lt;/h2&gt;</content><category term="cloud"></category><category term="OpenStack"></category></entry><entry><title>SL5 User Interfaces deprecation plan</title><link href="http://grid.ifca.es/sl5-user-interfaces-deprecation-plan.html" rel="alternate"></link><published>2013-11-25T00:00:00+01:00</published><updated>2013-11-25T00:00:00+01:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2013-11-25:/sl5-user-interfaces-deprecation-plan.html</id><summary type="html">&lt;p&gt;Dates for the Scientific Linux 5-based user interfaces (UIs) deprecation plan.&lt;/p&gt;</summary><content type="html">&lt;p&gt;The Scientific Linux 5 user interfaces have become obsolete and will be
 deprecated soon, according to the following deprecation plan:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;December 03th 2013: &lt;code&gt;gridui.ifca.es&lt;/code&gt; will stop pointing to the Scientific
@@ -188,7 +188,7 @@ soon as possible if it is not done yet.&lt;/p&gt;
 &lt;p&gt;If there is any user, group or software administrator that cannot reach the
 described deadline, please open a ticket on &lt;a href="mailto:grid.support@ifca.unican.es"&gt;our support helpdesk (
 grid.support@ifca.unican.es)&lt;/a&gt; as soon as
-possible, explaining your situation.&lt;/p&gt;</summary><category term="grid"></category><category term="user interface"></category><category term="Scientific Linux 5"></category></entry><entry><title>SL6 User Interfaces at your disposal</title><link href="http://grid.ifca.es/sl6-user-interfaces-at-your-disposal.html" rel="alternate"></link><updated>2013-10-28T00:00:00+01:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2013-10-28:sl6-user-interfaces-at-your-disposal.html</id><summary type="html">&lt;p&gt;All the users with access to IFCA cluster can now make use of Scientific Linux 6-based
+possible, explaining your situation.&lt;/p&gt;</content><category term="grid"></category><category term="user interface"></category><category term="Scientific Linux 5"></category></entry><entry><title>SL6 User Interfaces at your disposal</title><link href="http://grid.ifca.es/sl6-user-interfaces-at-your-disposal.html" rel="alternate"></link><published>2013-10-28T00:00:00+01:00</published><updated>2013-10-28T00:00:00+01:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2013-10-28:/sl6-user-interfaces-at-your-disposal.html</id><summary type="html">&lt;p&gt;Scientific Linux 6-based user interfaces (UIs) available at IFCA Cluster.&lt;/p&gt;</summary><content type="html">&lt;p&gt;All the users with access to IFCA cluster can now make use of Scientific Linux 6-based
 user interfaces. To access them just connect via SSH protocol to &lt;code&gt;griduisl6.ifca.es&lt;/code&gt; 
 and you will be redirected to any of the available servers.&lt;/p&gt;
 &lt;p&gt;The most noticeable fact in the new SL6 pool is that they are running over the OpenStack
@@ -199,9 +199,9 @@ hit nor enhanced, since the already existing ones (SL5) are also virtualized.&lt
 to try them and report any incidence that can occur. The deadline to drop the old SL5 servers
 is by the end of the year 2013, however this date can be postponed if needed. We will send 
 a reminder when this deadline approaches.&lt;/p&gt;
-&lt;p&gt;Enjoy!&lt;/p&gt;</summary><category term="grid"></category><category term="user interface"></category><category term="Scientific Linux 6"></category><category term="infrastructure"></category><category term="cloud"></category></entry><entry><title>OpenStack Havana upgrade</title><link href="http://grid.ifca.es/openstack-havana-upgrade.html" rel="alternate"></link><updated>2013-10-25T00:00:00+02:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2013-10-25:openstack-havana-upgrade.html</id><summary type="html">&lt;p&gt;On October the 29th (next Tuesday) we will upgrade our &lt;a href="http://portal.cloud.ifca.es"&gt;OpenStack&lt;/a&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;</content><category term="grid"></category><category term="user interface"></category><category term="Scientific Linux 6"></category><category term="infrastructure"></category><category term="cloud"></category></entry><entry><title>OpenStack Havana upgrade</title><link href="http://grid.ifca.es/openstack-havana-upgrade.html" rel="alternate"></link><published>2013-10-25T00:00:00+02:00</published><updated>2013-10-25T00:00:00+02:00</updated><author><name>IFCA</name></author><id>tag:grid.ifca.es,2013-10-25:/openstack-havana-upgrade.html</id><summary type="html">&lt;p&gt;Upgrade of the cloud infrastructure to the latest release.&lt;/p&gt;</summary><content type="html">&lt;p&gt;On October the 29th (next Tuesday) we will upgrade our &lt;a href="http://portal.cloud.ifca.es"&gt;OpenStack&lt;/a&gt;
 cloud infrastrucutre from Grizzly to the latest &lt;a href="http://www.openstack.org/software/havana/"&gt;Havana&lt;/a&gt;
 release.&lt;/p&gt;
 &lt;p&gt;Some of the Grid service and worker nodes are executed on top of this infrastructure, therefore
 some glitches in their availability are expected during the morning.&lt;/p&gt;
-&lt;p&gt;You can check the &lt;a href="https://goc.egi.eu/portal/index.php?Page_Type=Downtime&amp;amp;id=12066"&gt;downtime on the GOCDB&lt;/a&gt;.&lt;/p&gt;</summary><category term="cloud"></category><category term="upgrade"></category><category term="infrastructure"></category><category term="OpenStack"></category></entry></feed>
+&lt;p&gt;You can check the &lt;a href="https://goc.egi.eu/portal/index.php?Page_Type=Downtime&amp;amp;id=12066"&gt;downtime on the GOCDB&lt;/a&gt;.&lt;/p&gt;</content><category term="cloud"></category><category term="upgrade"></category><category term="infrastructure"></category><category term="OpenStack"></category></entry></feed>
