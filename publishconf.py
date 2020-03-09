@@ -10,11 +10,16 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'http://grid.ifca.es'
-RELATIVE_URLS = True
+# If your site is available via HTTPS, make sure SITEURL begins with https://
+SITEURL = 'https://ifca.github.io/'
+RELATIVE_URLS = False
 
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+# We do not want feeds at all
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 
 DELETE_OUTPUT_DIRECTORY = True
 

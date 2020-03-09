@@ -57,24 +57,19 @@
 		  
 		  <div class="sidebar">
 		    <div class="sidebar-container" {% if PELICAN_SOBER_STICKY_SIDEBAR %}id="sidebar-container-fixed"{% endif %}>
-
-	          {% if PELICAN_SOBER_ABOUT %}
-	            <aside>
-	              <h2>About</h2>
+	            
+                <aside>
+                  {% if PELICAN_SOBER_LOGO %}
+                  <h2><img class="logo" src="images/logo.png" /></h2>
+                  {% else %}
+                  <h2>About</h2>
+                  {% endif %}
+	              {% if PELICAN_SOBER_ABOUT %}
 			      <p>
                     {{ PELICAN_SOBER_ABOUT }}
 			      </p>
+			      {% endif %}
 			    </aside>
-			  {% endif %}
-
-  	          <nav>
-	            <h2>Categories</h2>
-	            <ul>
-	              {% for cat, null in categories %}
-	                <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-	              {% endfor %}
-	            </ul>
-	          </nav>
 
 	          {% if SOCIAL %}
 	            <aside>
@@ -89,7 +84,7 @@
 
 	          {% if LINKS %}
 	            <aside>
-	              <h2>Blogroll</h2>
+	              <h2>Links</h2>
 	              <ul>
 	                {% for name, link in LINKS %}
 	                  <li><a href="{{ link }}">{{ name }}</a></li>
@@ -104,7 +99,7 @@
 
       <footer>
 		<p role="contentinfo">
-		  {{ AUTHOR }} - Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/fle/pelican-sober">pelican-sober</a>.
+		  {{ AUTHOR }} - Powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/fle/pelican-sober">pelican-sober</a>.
     	</p>
 
 	  </footer>	
