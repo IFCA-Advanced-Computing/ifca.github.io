@@ -21,7 +21,7 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ('Advanced Computing and e-Science group', 'https://grid.ifca.es'),
+    ('Advanced Computing and e-Science group', 'https://computing.ifca.es'),
     ('Advanced Computing and e-Science group (wiki)', 'https://confluence.ifca.es'),
     ('Institute of Physics of Cantabria (IFCA)', 'https://ifca.unican.es'),
     ('Spanish National Research Council (CSIC)', 'https://www.csic.es'),
